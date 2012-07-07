@@ -11,7 +11,7 @@
     <properties>
         <jdk.java>1.6</jdk.java>
         <jetty-plugin-version>7.2.2.v20101205</jetty-plugin-version>
-        <jetty.port>8080</jetty.port>
+        <jetty.port>8081</jetty.port>
         <jetty.ssl>7.2.2.v20101205</jetty.ssl>
         <spring.version>3.1.1.RELEASE</spring.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
@@ -531,7 +531,7 @@
                         </connector>
                     </connectors>
                     <webAppConfig>
-                        <contextPath>/encuestame</contextPath>
+                        <contextPath>/</contextPath>
                     </webAppConfig>
                     <scanIntervalSeconds>0</scanIntervalSeconds>
                 </configuration>

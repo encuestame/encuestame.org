@@ -11,8 +11,7 @@
 
         <div data-role="content">
             <h1>
-                <img
-                    src="<c:url value="/resources/img/logo_encuestame-small.png" />"/>
+                <img src="<c:url value="/resources/img/logo_encuestame-small.png" />"/>
             </h1>
             <p>
                 <spring:message code="welcome.detail" />
@@ -85,18 +84,6 @@
                     </li>
                     <li><a href="index?lang=en" rel="external">
                             English</a>
-                    </li>
-                    <li><a href="index?lang=de" rel="external">
-                            Deutsch</a>
-                    </li>
-                    <li><a href="index?lang=fr" rel="external">
-                            Français</a>
-                    </li>
-                     <li><a href="index?lang=pt" rel="external">
-                            Portugais</a>
-                    </li>
-                     <li><a href="index?lang=ar" rel="external">
-                            عربي</a>
                     </li>
                 </ul>
         </div><!-- /content -->

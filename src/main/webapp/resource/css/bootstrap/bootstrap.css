@@ -2269,7 +2269,7 @@ button.btn.small, input[type="submit"].btn.small {
 }
 .tab-content > .active, .pill-content > .active {
   display: block;
-  margin-left: 122px;
+  margin-left: 140px;
 }
 .tabs-below .nav-tabs {
   border-top: 1px solid #ddd;
