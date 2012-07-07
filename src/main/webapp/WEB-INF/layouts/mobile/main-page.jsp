@@ -1,0 +1,1 @@
+<%@ include file="/WEB-INF/layouts/mobile/container-page.jsp"%>

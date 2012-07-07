@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+   <group name='site.index'>
+    <js>/resource/js/enme.site.index.js</js>
+  </group>
+  <group name='site.download'>
+    <js>/resource/js/enme.site.download.js</js>
+  </group>
+  <group name='core'>
+      <js>/resource/js/jquery/jquery-1.7.2.js</js>
+      <js>/resource/js/modernizr-2.5.3.js</js>      
+      <js>/resource/js/moment.js</js>      
+      <js>/resource/js/bootstrap/bootstrap.js</js>
+      <js>/resource/js/plugins/jquery.colorbox.js</js>
+      <js>/resource/js/plugins/jquery.ThreeDots.js</js>
+      <js>/resource/js/plugins/jquery.jtruncate.js</js>
+      <js>/resource/js/plugins/jquery.shorten.js</js>      
+      <js>/resource/js/plugins/jflickrfeed.js</js>
+
+  </group>
+  <group name='site.core'>
+    <css>/resource/css/bootstrap/bootstrap-responsive.css</css>
+    <css>/resource/css/bootstrap/bootstrap.css</css>
+    <css>/resource/css/site.css</css>
+    <css>/resource/css/colorbox.css</css>
+  </group>
+  <group name='mobile.site'>
+     <css>/resource/css/jquery/jquery.mobile-1.1.0.css</css>
+    <css>/resource/css/mobile.css</css>
+  </group>
+  <group name='mobile.core'>
+      <js>/resource/js/jquery/jquery-1.7.2.js</js>
+      <js>/resource/js/jquery/jquery.mobile-1.1.0.js</js>
+      <js>/resource/js/mobile.js</js>
+  </group>
+</groups>

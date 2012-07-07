@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:int-twitter="http://www.springframework.org/schema/integration/twitter"
+    xmlns:int="http://www.springframework.org/schema/integration"
+    xmlns:int-feed="http://www.springframework.org/schema/integration/feed"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/integration/twitter
+       http://www.springframework.org/schema/integration/twitter/spring-integration-twitter.xsd
+       http://www.springframework.org/schema/integration
+       http://www.springframework.org/schema/integration/spring-integration.xsd
+       http://www.springframework.org/schema/integration/feed
+       http://www.springframework.org/schema/integration/feed/spring-integration-feed.xsd">
+
+    <int:annotation-config />
+
+
+
+    <!-- declare the resolver <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"
+        /> -->
+
+    <bean id="localeResolver"
+        class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="en" />
+    </bean>
+
+
+    <context:property-placeholder
+        properties-ref="properties" />
+
+    <bean id="properties"
+        class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:mail.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="connectionFactoryLocator"
+        class="org.springframework.social.connect.support.ConnectionFactoryRegistry">
+        <property name="connectionFactories">
+            <list>
+                <bean
+                    class="org.springframework.social.twitter.connect.TwitterConnectionFactory">
+                    <constructor-arg value="${twitter.oauth.consumerKey}" />
+                    <constructor-arg value="${twitter.oauth.consumerSecret}" />
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <context:component-scan base-package="org.encuestame.site" />
+
+    <bean id="mailSender" scope="singleton"
+        class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.host}" />
+        <property name="port" value="${mail.port}" />
+        <property name="protocol" value="${mail.transport.protocol}" />
+        <property name="username" value="${mail.username}" />
+        <property name="password" value="${mail.password}" />
+        <property name="defaultEncoding" value="UTF-8" />
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtps.auth">true</prop>
+                <prop key="mail.smtps.debug">true</prop>
+                <prop key="mail.smtps.starttls.enable">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="templateMessage" class="org.springframework.mail.SimpleMailMessage" />
+
+
+    <bean
+        class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">error</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+    <!-- <bean id="twitterTemplate" class="org.springframework.social.twitter.api.impl.TwitterTemplate"> -->
+    <!-- <constructor-arg value="${twitter.oauth.consumerKey}" /> -->
+    <!-- <constructor-arg value="${twitter.oauth.consumerSecret}" /> -->
+    <!-- <constructor-arg value="${twitter.oauth.accessToken}" /> -->
+    <!-- <constructor-arg value="${twitter.oauth.accessTokenSecret}" /> -->
+    <!-- </bean> -->
+
+    <!-- <bean id="metadataStore" -->
+    <!-- class="org.springframework.integration.store.PropertiesPersistingMetadataStore"
+        /> -->
+
+    <!-- <int-twitter:inbound-channel-adapter -->
+    <!-- twitter-template="twitterTemplate" channel="logger"> -->
+    <!-- <int:poller fixed-rate="5000" max-messages-per-poll="3" /> -->
+    <!-- </int-twitter:inbound-channel-adapter> -->
+
+    <!-- <int-twitter:dm-inbound-channel-adapter -->
+    <!-- twitter-template="twitterTemplate" channel="inboundDmChannel"> -->
+    <!-- <int:poller fixed-rate="5000" max-messages-per-poll="3" /> -->
+    <!-- </int-twitter:dm-inbound-channel-adapter> -->
+
+    <!-- <int-twitter:mentions-inbound-channel-adapter -->
+    <!-- twitter-template="twitterTemplate" channel="inboundMentionsChannel"> -->
+    <!-- <int:poller fixed-rate="5000" max-messages-per-poll="3" /> -->
+    <!-- </int-twitter:mentions-inbound-channel-adapter> -->
+
+    <!-- <int-twitter:search-inbound-channel-adapter -->
+    <!-- query="#springintegration" channel="inboundSearchChannel"> -->
+    <!-- <int:poller fixed-rate="5000" max-messages-per-poll="3" /> -->
+    <!-- </int-twitter:search-inbound-channel-adapter> -->
+
+    <!-- <int:publish-subscribe-channel id="test"></int:publish-subscribe-channel> -->
+    <!-- <int:channel id="inChannel"> -->
+    <!-- <int:queue /> -->
+    <!-- </int:channel> -->
+    <!-- <int:channel id="inboundDmChannel"> -->
+    <!-- <int:queue /> -->
+    <!-- </int:channel> -->
+    <!-- <int:channel id="inboundMentionsChannel"> -->
+    <!-- <int:queue /> -->
+    <!-- </int:channel> -->
+    <!-- <int:channel id="inboundSearchChannel"> -->
+    <!-- <int:queue /> -->
+    <!-- </int:channel> -->
+
+    <!-- <context:component-scan base-package="org.encuestame.site.integration"/> -->
+
+    <!-- <int:logging-channel-adapter id="logger" expression="payload.fromUser
+        + ': ' + payload.text"/> -->
+
+    <!-- <int-feed:inbound-channel-adapter id="feedAdapter" -->
+    <!-- channel="feedChannel" -->
+    <!-- auto-startup="true" -->
+    <!-- url="https://github.com/encuestame/encuestame/commits/development.atom"> -->
+    <!-- <int:poller fixed-rate="50000" max-messages-per-poll="1" /> -->
+    <!-- </int-feed:inbound-channel-adapter> -->
+
+    <!-- <int:channel id="feedChannel"> -->
+    <!-- <int:queue capacity="100"/> -->
+    <!-- </int:channel> -->
+
+    <!-- <int:annotation-config/> -->
+    <!-- <bean id="messageHandler" class="org.encuestame.site.integration.RSSMessageHandler"/> -->
+    <!-- <bean id="messageHandler2" class="org.encuestame.site.integration.MessageHandler"/> -->
+
+    <!-- <int:service-activator input-channel="feedChannel" output-channel="output"
+        ref="messageHandler2"> -->
+    <!-- <int:poller fixed-rate="5000" max-messages-per-poll="3" /> -->
+    <!-- </int:service-activator> -->
+
+    <!-- <int:channel id="output"> -->
+    <!-- <int:queue capacity="100"/> -->
+    <!-- </int:channel> -->
+    <!-- http://comdynamics.net/blog/295/spring-integration-rss-feed-reader/ -->
+
+</beans>
