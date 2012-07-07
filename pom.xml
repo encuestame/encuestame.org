@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.encuestame.site</groupId>
     <artifactId>org.encuestame.site</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <packaging>war</packaging>
     <name>encuestame-site</name>
     <description>org.encuestame.site</description>

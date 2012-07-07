@@ -29,6 +29,7 @@
                             <li><a href="http://metrics.encuestame.org"><spring:message code="metrics"/></a></li>
                             <li><a href="contact"><spring:message code="more.contact"/></a></li>
                             <li><a href="/about"><spring:message code="about"/></a></li>
+                            <li><a href="http://blog.encuestame.org">Blog</a></li>
                         </ul>
                     </li>
                 </ul>
