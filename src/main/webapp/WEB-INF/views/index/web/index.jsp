@@ -18,19 +18,22 @@
             </h3>
             <p>
             <ul>
-                <li><a href="http://demo.encuestame.org"><spring:message
+                <li><a href="http://demo.encuestame.org" target="_blank"><spring:message
                             code="demo" />
                 </a></li>
+                <li><a href="http://blog.encuestame.org" target="_blank">Blog
+                </a></li>
+                
                 <li><a
-                    href="https://www.facebook.com/pages/encuestame/80467777529"><spring:message
+                    href="https://www.facebook.com/pages/encuestame/80467777529" target="_blank"><spring:message
                             code="rss.facebook" />
                 </a></li>
-                <li><a href="http://wiki.encuestame.org/display/Br/Home"><spring:message
+                <li><a href="http://wiki.encuestame.org/display/Br/Home" target="_blank"><spring:message
                             code="roadmap" />
                 </a></li>
-                <li><a href="contributors"><spring:message code="contributors" />
+                <li><a href="contributors" target="_blank"><spring:message code="contributors" />
                 </a></li>
-                <li><a href="http://eepurl.com/jKaaf"><spring:message code="releases-mail-list" />
+                <li><a href="http://eepurl.com/jKaaf" target="_blank"><spring:message code="releases-mail-list" />
                 </a></li>
             </ul>
             </p>
@@ -100,12 +103,12 @@
         <div class="span4">
             <p>
                 <a class="btn btn-large btn-inverse"
-                    href="https://github.com/encuestame/encuestame/zipball/release"><spring:message
+                    href="https://github.com/encuestame/encuestame/zipball/release" target="_blank"><spring:message
                             code="get.source" /> &raquo;</a>
             </p>
             <p>
                 <a class="btn btn-large btn-danger"
-                    href="http://sourceforge.net/projects/encuestame/files/encuestame_beta/"><spring:message
+                    href="http://sourceforge.net/projects/encuestame/files/encuestame_beta/" target="_blank"><spring:message
                             code="get.download" /> &raquo;</a>
             </p>
         </div>

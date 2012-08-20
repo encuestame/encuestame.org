@@ -7,7 +7,6 @@
 <script src="<c:url value="/resources/js/jflickrfeed.js" />"></script>
  -->
 <%@ include file="/WEB-INF/jsp/includes/analytics.jsp"%>
-
 <script type="text/javascript">
   var uvOptions = {};
   (function() {
