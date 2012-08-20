@@ -28,6 +28,10 @@
                     href="https://www.facebook.com/pages/encuestame/80467777529" target="_blank"><spring:message
                             code="rss.facebook" />
                 </a></li>
+                <li><a
+                    href="http://twitter.com/encuestame" target="_blank">
+                    Twitter
+                </a></li>                
                 <li><a href="http://issues.encuestame.org/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel" target="_blank"><spring:message
                             code="roadmap" />
                 </a></li>
@@ -78,11 +82,8 @@
             </p>
             <p>
             <div>
-                <a href="https://twitter.com/share" class="twitter-share-button"
-                    data-via="encuestame" data-size="large"
-                    data-related="jotadeveloper" data-hashtags="encuestame"><spring:message
-                        code="tweet" />
-                </a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.encuestame.org" data-text="Encuestame, the best open source survey and it's free !!" data-size="large" data-related="encuestame" data-hashtags="opensource,survey,free">Tweet</a>
+                <a href="https://twitter.com/encuestame" class="twitter-follow-button" data-show-count="false">Follow @encuestame</a>                
             </div>
             <br />
 
