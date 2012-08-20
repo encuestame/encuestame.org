@@ -28,7 +28,7 @@
                     href="https://www.facebook.com/pages/encuestame/80467777529" target="_blank"><spring:message
                             code="rss.facebook" />
                 </a></li>
-                <li><a href="http://wiki.encuestame.org/display/Br/Home" target="_blank"><spring:message
+                <li><a href="http://issues.encuestame.org/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel" target="_blank"><spring:message
                             code="roadmap" />
                 </a></li>
                 <li><a href="contributors" target="_blank"><spring:message code="contributors" />
