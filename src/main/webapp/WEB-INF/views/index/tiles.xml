@@ -3,60 +3,53 @@
 
 <tiles-definitions>
 
-    <definition name="index" extends="main-page">
-        <put-attribute name="title" value="Welcome to Encuestame" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}index.jsp" />
-        <put-attribute name="extra-js"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}index-js.jsp" />
-    </definition>
+  <definition name="index" extends="main-page">
+    <put-attribute name="title" value="Welcome to Encuestame" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}index.jsp" />
+  </definition>
 
-    <definition name="download" extends="page">
-        <put-attribute name="title" value="Encuestame - Download" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}download.jsp" />
-        <put-attribute name="extra-js"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}download-js.jsp" />
-    </definition>
+  <definition name="download" extends="page">
+    <put-attribute name="title" value="Encuestame - Download" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}download.jsp" />
+  </definition>
 
-    <definition name="features" extends="page">
-        <put-attribute name="title" value="Encuestame - Features" />
-        <put-attribute name="content" expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}features.jsp" />
-        <put-attribute name="extra-js"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}features-js.jsp" />
-    </definition>
+  <definition name="features" extends="page">
+    <put-attribute name="title" value="Encuestame - Features" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}features.jsp" />
+  </definition>
 
-    <definition name="screenshots" extends="page">
-        <put-attribute name="title" value="Encuestame - Screenshots" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}screenshots.jsp" />
-        <put-attribute name="extra-js"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}screenshot-js.jsp" />
-    </definition>
+  <definition name="screenshots" extends="page">
+    <put-attribute name="title" value="Encuestame - Screenshots" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}screenshots.jsp" />
+  </definition>
 
-    <definition name="about" extends="page">
-        <put-attribute name="title" value="Encuestame - About us" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}about.jsp" />
-    </definition>
+  <definition name="about" extends="page">
+    <put-attribute name="title" value="Encuestame - About us" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}about.jsp" />
+  </definition>
 
-    <definition name="contributors" extends="page">
-        <put-attribute name="title" value="Encuestame - About us" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}contributors.jsp" />
-    </definition>
+  <definition name="contributors" extends="page">
+    <put-attribute name="title" value="Encuestame - About us" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}contributors.jsp" />
+  </definition>
 
-    <definition name="source" extends="page">
-        <put-attribute name="title" value="Encuestame - Source Code" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}source.jsp" />
-    </definition>
+  <definition name="source" extends="page">
+    <put-attribute name="title" value="Encuestame - Source Code" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}source.jsp" />
+  </definition>
 
-    <definition name="contact" extends="page">
-        <put-attribute name="title" value="Encuestame - Contact" />
-        <put-attribute name="content"
-            expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}contact.jsp" />
-    </definition>
+  <definition name="contact" extends="page">
+    <put-attribute name="title" value="Encuestame - Contact" />
+    <put-attribute name="content"
+      expression="/WEB-INF/views/index/${currentDevice.mobile ? 'mobile/' : 'web/'}contact.jsp" />
+  </definition>
 
 
 </tiles-definitions>

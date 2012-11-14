@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.encuestame.site</groupId>
     <artifactId>org.encuestame.site</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
     <packaging>war</packaging>
     <name>encuestame-site</name>
     <description>org.encuestame.site</description>
@@ -456,7 +456,7 @@
         </testResources>
 
         <plugins>
-            <plugin>
+           <!--  <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
                 <version>${wro4j.plugin}</version>
@@ -478,7 +478,7 @@
                     <contextFolder>${basedir}/src/main/webapp/</contextFolder>
                     <wroManagerFactory>ro.isdc.wro.extensions.manager.standalone.YUIStandaloneManagerFactory</wroManagerFactory>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

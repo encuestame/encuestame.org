@@ -2422,7 +2422,6 @@ button.btn.small, input[type="submit"].btn.small {
 }
 
 .navbar .brand .logo {
-  background-image: url("/resources/img/logo_encuestame-small-x.png");
   background-repeat: no-repeat;
   display: inline-block;
   height: 10px;

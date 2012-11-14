@@ -17,18 +17,24 @@
 </head>
 
 <body>
-	<a href="https://github.com/encuestame/encuestame"><img
-		style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;" 
-		src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
-		alt="Fork me on GitHub"></a>
-	<tiles:insertAttribute name="header" ignore="true" />
+  <a href="https://github.com/encuestame/encuestame"><img
+    style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+    alt="Fork me on GitHub"></a>
+  <tiles:insertAttribute name="header" ignore="true" />
 
-    <div class="container">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
         <tiles:insertAttribute name="content" />
-        <hr>
-        <tiles:insertAttribute name="footer" />
+      </div>
     </div>
 
-    <tiles:insertAttribute name="extra-js" ignore="true" />
+
+    <hr>
+    <tiles:insertAttribute name="footer" />
+  </div>
+
+  <tiles:insertAttribute name="extra-js" ignore="true" />
 </body>
 </html>

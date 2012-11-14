@@ -6,7 +6,7 @@
 <meta charset="utf-8" />
 <meta name="description" content="Open Source Online Survey Software Social Tool" />
 <meta name="keywords" content="survey, open source, tool, java, dojo, cms, web, research, business, questionnaire, statistics, hibernate" />
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name=author content="encuestame development team">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="robots" content="index, follow">
