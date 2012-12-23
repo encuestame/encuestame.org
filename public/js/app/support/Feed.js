@@ -23,16 +23,19 @@
  */
 define(["jquery", "foundation"],function($){
 
-    var Feed = function (url, callback) {
+    var Feed = function (url, callback, params) {
 
        this.call = function() {
-     			$.ajax({
-                	url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
-                	dataType: 'json',
-                	success: function(data) {
-                   		callback(data.responseData.feed);
+          var default_params = {
+                  url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+                  dataType: 'json',
+                  success: function(data) {
+                    console.log(" json data", data);
+                      callback(data.responseData.feed);
                  }
-              });
+          };
+          $.merge(default_params, params || {});
+     			$.ajax(default_params);
       	};
     };
 

@@ -33,7 +33,7 @@ define(["jquery"],function($) {
     		download : "http://sourceforge.net/api/file/index/project-id/248649/mtime/desc/limit/20/rss",
     		facebook : "http://www.facebook.com/feeds/page.php?id=80467777529&format=rss20",
     		github : "https://github.com/encuestame/encuestame/commits/development.atom",
-    		wiki : "http://wiki.encuestame.org/createrssfeed.action?types=page&pageSubTypes=comment&pageSubTypes=attachment&types=blogpost&blogpostSubTypes=comment&blogpostSubTypes=attachment&types=mail&spaces=conf_all&title=Encuestame+Wiki+RSS+Feed&labelString%3D&excludedSpaceKeys%3D&sort=modified&maxResults=10&timeSpan=5&showContent=true&confirm=Create+RSS+Feed&os_authType=basic&os_username=rss&os_password=rss",
+    		wiki : "http://wiki.encuestame.org/createrssfeed.action?types=page&types=blogpost&spaces=~juanpicado&spaces=RELEASE&title=Encuestame+Release+Feed&labelString%3D&excludedSpaceKeys%3D&sort=modified&maxResults=10&timeSpan=300&confirm=Create+RSS+Feed&showContent=false&os_authType=basic",
 
     	},
     	footer : {
@@ -43,6 +43,5 @@ define(["jquery"],function($) {
     		source : 'http://sourceforge.net/projects/encuestame/'
     	}
     };
-    console.log("_CONST", _CONST);
     return _CONST;
 });

@@ -23,11 +23,19 @@
  */
 define(["jquery",
          "backbone",
+         "views/DownloadFeed",
+         "views/ReleaseNotes",
+         "models/Note",
+         "collections/NoteCollection",
         "text!templates/master/download.html"],
 
     function($,
              Backbone,
-            template) {
+             DownloadFeed,
+             ReleaseNotes,
+             Note,
+             NoteCollection,
+             template) {
 
         var IndexView = Backbone.View.extend({
 
@@ -43,14 +51,22 @@ define(["jquery",
              * @method
              */
             render: function() {
-                console.log("el:", this.$el);
                 this.$el.empty();
-                this.template = _.template(template, {}),
+                this.template = _.template(template, {});
                 this.$el.append($(this.template));
-                // new Tweets({el: this.$el.find(".tweet-list")});
-                // new FacebookFeed({el: this.$el.find(".fb-list")});
-                // new GitHubFeed({el: this.$el.find(".gh-list")});
-                // new SliderSupport(this.$el.find("#featured"));
+                new DownloadFeed({el: this.$el.find(".download-feed")});
+                var notes = new NoteCollection();
+                var create_note = function (title, content, url) {
+                        var note = new Note({
+                            title : title,
+                            url : url,
+                            content : content
+                        });
+                        notes.add(note);
+                };
+                create_note("Encuestame 1.146RC1 Release Notes", "What's new in the Encuestame 1.146RC1 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.146RC1+Release+Notes');
+                create_note("Encuestame 1.145 Release Notes", "What's new in the Encuestame 1.145 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.145+Release+Notes');
+                new ReleaseNotes({ collection : notes, el: this.$el.find(".release-notes")});
                 return this;
               }
             });

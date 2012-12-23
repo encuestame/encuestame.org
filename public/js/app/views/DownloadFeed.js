@@ -16,7 +16,7 @@ define(["jquery",
 
         var FaceBookFeed = Backbone.View.extend({
 
-            el: $(".fb-list"),
+            el: $(".download-feed"),
 
             // View constructor
             initialize: function() {
@@ -30,7 +30,6 @@ define(["jquery",
             render: function() {
                 var parent = this;
                 var feed = new FeedSupport(Constants.rss.download, function(data) {
-                    //console.log("feed data", data);
                     var entries = data.entries;
                     this.template = _.template(template, Constants);
                     // Dynamically updates the UI with the view's template
