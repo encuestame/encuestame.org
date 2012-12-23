@@ -1,0 +1,31 @@
+{
+  "name": "encuestame",
+  "title": "Encuestame Open Source Survey",
+  "description": "Encuestame Open Source Survey"",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://www.encuestame.org",
+  "author": {
+    "name": "Juan Picado",
+    "email": "juanpicado19@gmail.com",
+    "url": "http://www.jotadeveloper.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:encuestame/encuestame-site.git"
+  },
+  "bugs": {
+    "url": "http://issues.encuestame.org/secure/Dashboard.jspa"
+  },
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "http://www.gnu.org/licenses/gpl-3.0.en.html"
+    }
+  ],
+  "dependencies": {
+    "express": "3.x"
+  },
+  "main": "./server/server",
+  "keywords": ["social network", "survey", "encuestame"]
+}
