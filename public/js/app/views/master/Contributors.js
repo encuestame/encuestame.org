@@ -46,10 +46,6 @@ define(["jquery",
                 this.$el.empty();
                 this.template = _.template(template, {}),
                 this.$el.append($(this.template));
-                new Tweets({el: this.$el.find(".tweet-list")});
-                new FacebookFeed({el: this.$el.find(".fb-list")});
-                new GitHubFeed({el: this.$el.find(".gh-list")});
-                new SliderSupport(this.$el.find("#featured"));
                 return this;
               }
             });

@@ -14,7 +14,7 @@ var baseConfig = {
   // Sets path names and paths for modules relative to the baseUrl
   paths: {
 
-    "mobile": "app/config/MobileInit",
+    //"mobile": "app/config/MobileInit",
 
     "desktop": "app/config/DesktopInit"
 
@@ -23,16 +23,16 @@ var baseConfig = {
   // Wraps all scripts in an IIFE (Immediately Invoked Function Expression)
   // (function() { + content + }());
   wrap: true,
-    
+
   // The optimized build file will use almond.js (AMD shim) instead of the larger Require.js
   name: "libs/almond",
 
   // Removes third-party license comments
-  preserveLicenseComments: false,
+  preserveLicenseComments: true,
 
   // Uses uglify.js for minification
   optimize: "uglify"
- 
+
  };
 
 // Creates an array of build configs, the baseConfig will
@@ -40,18 +40,18 @@ var baseConfig = {
 
 var configs = [
 
-    {
+    // {
 
-        // Tells Require.js to look at mobileInit.js for all mobile shim and path configurations
-        mainConfigFile: "../public/js/app/config/MobileInit.js",
+    //     // Tells Require.js to look at mobileInit.js for all mobile shim and path configurations
+    //     //mainConfigFile: "../public/js/app/config/MobileInit.js",
 
-        // Points to mobileInit.js (Remember that "mobile" is the module name for mobileInit.js)
-        include: ["mobile"],
+    //     // Points to mobileInit.js (Remember that "mobile" is the module name for mobileInit.js)
+    //     //include: ["mobile"],
 
-        // The optimized mobile build file will put into the app directory
-        out: "../public/js/app/config/MobileInit.min.js"
+    //     // The optimized mobile build file will put into the app directory
+    //     out: "../public/js/app/config/MobileInit.min.js"
 
-    },
+    // },
 
     {
 

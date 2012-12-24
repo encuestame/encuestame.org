@@ -1,10 +1,13 @@
-<li id="t_<%= id %>">
-	<h3>
-		<img src="<%= user.profile_image_url %>" alt="<%= user.name %>" width="45" />
-		<div>
-			<a href="http://twitter.com/<%= user.name %>" title="<%= user.name %>">@<%= user.name %></a>
+ <li id="t_<%= id %>" class="tweet-item">
+ 		<div class="left">
+			<img src="<%= user.profile_image_url %>" alt="<%= user.name %>" width="45" />
+		</div>
+		<div class="right">
+			<a href="http://twitter.com/<%= user.name %>" title="<%= user.name %>">@<%= text %></a>
+			<p>
+				<%= text %>
+			</p>
 			<span class="date"><%=  moment(created_at).fromNow() %></span>
 		</div>
-	</h3>
-	<p><%= text %>
+
 </li>

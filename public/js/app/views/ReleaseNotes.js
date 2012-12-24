@@ -48,8 +48,7 @@
               */
              render: function() {
                 var parent = this;
-                this.collection.each(function(item){
-                    console.log('coll', item);
+                this.collection.each(function(item) {
                     var item = new ReleaseNoteView({ model : item});
                     parent.$el.append(item.$el);
                 });

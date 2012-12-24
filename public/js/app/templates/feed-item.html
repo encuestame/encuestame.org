@@ -1,11 +1,7 @@
 <li class="feed-item">
-	<h3>
-		<div>
-			<a href="<%= link %>" title="<%= title %>">@<%= title %></a>
-			<span class="date"><%= moment(publishedDate).fromNow() %></span>
-		</div>
-	</h3>
+	<a href="<%= link %>" title="<%= title %>" target="_blank">@<%= title %></a>
 	<p>
 		<%= contentSnippet %>
 	</p>
+	<span class="date"><%= moment(publishedDate).fromNow() %></span> by <span class="date"><%= author %></span>
 </li>

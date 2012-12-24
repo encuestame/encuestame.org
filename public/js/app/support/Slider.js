@@ -24,9 +24,13 @@
 define(["jquery", "foundation"],function($){
 
     var SliderSupport = function (selector) {
-                        selector.orbit({
-                            animation : "fade"
-                        });
+                        var _s = selector.find(".images");
+                        if (_s.length != 0) {
+                        		selector.removeClass('hidden');
+	                        	_s.orbit({
+		                            animation : "fade"
+	                        });
+    	                }
     };
 
     return SliderSupport;

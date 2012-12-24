@@ -13,13 +13,13 @@ require.config({
       // --------------
       "jquery": "libs/jquery",
 
-      "jqueryui": "libs/jqueryui",
+      //"jqueryui": "libs/jqueryui",
 
       "underscore": "libs/lodash",
 
       "backbone": "libs/backbone",
 
-      "backbone.layoutmanager": "libs/plugins/backbone.layoutmanager",
+      //"backbone.layoutmanager": "libs/plugins/backbone.layoutmanager",
 
       "i18n" : "libs/plugins/i18n",
 
@@ -33,7 +33,7 @@ require.config({
 
       // Plugins
       // -------
-      "backbone.validateAll": "libs/plugins/Backbone.validateAll",
+      //"backbone.validateAll": "libs/plugins/Backbone.validateAll",
 
       "bootstrap": "libs/plugins/bootstrap",
 
@@ -66,13 +66,13 @@ require.config({
       "bootstrap": ["jquery"],
 
        // jQueryUI
-      "jqueryui": ["jquery"],
+      //"jqueryui": ["jquery"],
 
        // jQuery Plugin Colorbox
       "colorbox": ["jquery"],
 
        // backbone layoutmanage
-      "backbone.layoutmanager": ["backbone"],
+      //"backbone.layoutmanager": ["backbone"],
 
       // Backbone
       "backbone": {
@@ -93,7 +93,7 @@ require.config({
 });
 
 // Includes Desktop Specific JavaScript files here (or inside of your Desktop router)
-require(["jquery", "domReady", "backbone", "routers/DesktopRouter", "foundation", "jqueryui", "colorbox", "backbone.validateAll", "foundation", "backbone.layoutmanager", 'moment'],
+require(["jquery", "domReady", "backbone", "routers/DesktopRouter", "foundation", "colorbox", "foundation", 'moment'],
 
   function($, domReady, Backbone, DesktopRouter) {
 
@@ -103,6 +103,14 @@ require(["jquery", "domReady", "backbone", "routers/DesktopRouter", "foundation"
      var Modernizr = window.Modernizr;
      $(document).foundationNavigation();
      $(document).foundationTopBar();
+     // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
+      if (Modernizr.touch && !window.location.hash) {
+        $(window).load(function () {
+          setTimeout(function () {
+            window.scrollTo(0, 1);
+          }, 0);
+        });
+      }
   }
 
 );

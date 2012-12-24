@@ -41,8 +41,6 @@ define(["jquery",
                             include_entities: true
                         },
                         success: function(data, textStatus, xhr) {
-
-                            console.log("dsadas", data);
                             for(a in data) {
                               var tweet = new Model(data[a]);
                               var tweetView = new TweetView({model: tweet});

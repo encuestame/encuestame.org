@@ -56,7 +56,6 @@ define(["jquery",
              * @method
              */
             render: function() {
-                console.log("i18n", Index);
                 this.$el.empty();
                 this.template = _.template(template, Constants),
                 this.$el.append($(this.template));

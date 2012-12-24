@@ -54,7 +54,6 @@ define(["jquery",
              */
             render: function() {
                 this.$el.empty();
-                console.log("template", template, Constants);
                 this.template = _.template(template, Constants);
                 this.$el.append($(this.template));
                 new DownloadFeed({el: this.$el.find(".download-feed")});
