@@ -26,20 +26,20 @@ define(["jquery",
         "domReady",
         "views/master/IndexView",
         "views/master/Contributors",
-        "views/master/SourceCode",
         "views/master/Download",
         "views/master/Features",
         "views/master/FooterView",
+        "views/master/AboutView",
         "foundation"],
         function($,
                  Backbone,
                  domReady,
                  IndexView,
                  Contributors,
-                 SourceCode,
                  Download,
                  Features,
                  FooterView,
+                 AboutView,
                  foundation) {
 
         var DesktopRouter = Backbone.Router.extend({
@@ -52,7 +52,6 @@ define(["jquery",
 
             // All of your Backbone Routes (add more)
             routes: {
-
                 // When there is no hash on the url, the home method is called
                 "": "index",
                 "features" : "features",
@@ -90,12 +89,6 @@ define(["jquery",
                 });
             },
 
-
-            screenshots : function () {
-                new FooterView();
-            },
-
-
             contributors : function () {
                   domReady(function () {
                     var node  = $("#content");
@@ -104,23 +97,9 @@ define(["jquery",
                 });
             },
 
-
             about : function () {
+                new AboutView();
                 new FooterView();
-            },
-
-
-            contact : function () {
-                new FooterView();
-            },
-
-
-            source : function () {
-                 domReady(function () {
-                    var node  = $("#content");
-                    new SourceCode({el: node});
-                    new FooterView();
-                });
             }
         });
 

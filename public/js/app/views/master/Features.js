@@ -23,7 +23,7 @@
  */
 define(["jquery",
          "backbone",
-        "text!templates/master/features.html"],
+         "text!templates/master/features.html"],
 
     function($,
              Backbone,
@@ -44,11 +44,17 @@ define(["jquery",
              * @method
              */
             render: function() {
-                console.log("el:", this.$el);
                 this.$el.empty();
                 this.template = _.template(template, {});
                 this.$el.append($(this.template));
-                this.$el.find('a.gallery').colorbox({ width : "800px" , height : "800px", speed : 200, scalePhotos : true});
+                this.$el.find('a.gallery').colorbox(
+                  {
+                    width : "750px" ,
+                    height : "600px",
+                    scalePhotos : false,
+                    speed : 200,
+                    scalePhotos : true
+                  });
                 return this;
               }
             });

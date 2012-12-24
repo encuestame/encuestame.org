@@ -23,21 +23,13 @@
  */
 define(["jquery",
          "backbone",
-        "views/Tweets",
-        "support/Slider",
-        "views/FacebookFeed",
-        "views/GitHubFeed",
         "text!templates/master/contributors.html"],
 
     function($,
              Backbone,
-             Tweets,
-             SliderSupport,
-             FacebookFeed,
-             GitHubFeed,
             template) {
 
-        var IndexView = Backbone.View.extend({
+        var ContributorsView = Backbone.View.extend({
 
             el: $("#content"),
 
@@ -51,7 +43,6 @@ define(["jquery",
              * @method
              */
             render: function() {
-                console.log("el:", this.$el);
                 this.$el.empty();
                 this.template = _.template(template, {}),
                 this.$el.append($(this.template));
@@ -63,7 +54,7 @@ define(["jquery",
               }
             });
         // Returns the View class
-        return IndexView;
+        return ContributorsView;
 
     }
 

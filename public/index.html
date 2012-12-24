@@ -1,19 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7 ui-mobile-rendering" lang="en">
-  <![endif]-->
-  <!--[if IE 7]>
-  <html class="no-js lt-ie9 lt-ie8 ui-mobile-rendering" lang="en">
-    <![endif]-->
-    <!--[if IE 8]>
-    <html class="no-js lt-ie9 ui-mobile-rendering" lang="en">
-      <![endif]-->
-      <!--[if gt IE 8]>
-      <!-->
-      <html class="no-js ui-mobile-rendering" lang="en">
-        <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8" />
         <meta charset="utf-8">
         <link rel="icon"  type="image/png"  href="favicon.ico">
         <!-- Use the .htaccess and remove these lines to avoid edge case issues.
@@ -24,7 +17,7 @@
         <meta name="description" content="Encuestame Survey Java Open Source">
 
         <!-- Mobile viewport optimized: h5bp.com/viewport -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+        <meta name="viewport" content="width=device-width" />
 
         <!-- Include your site specific stylesheets -->
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -121,19 +114,15 @@
 </head>
 <body class="enme">
 
-        <nav class="top-bar">
-          <ul>
-            <!-- Title Area -->
-            <li class="name">
-              <h1>
-                <a href="#"></a>
-              </h1>
-            </li>
-          </ul>
-          <section>
-            <!-- Left Nav Section -->
-            <ul class="left">
-              <li>
+
+  <nav class="top-bar fixed">
+    <ul>
+      <li class="toggle-topbar"><a href="#"></a></li>
+    </ul>
+
+    <section>
+      <ul class="left">
+     <li>
                 <a href="#">Home</a>
               </li>
 
@@ -147,54 +136,69 @@
               </li>
               <li class="divider"></li>
               <li>
+                <a href="http://wiki.encuestame.org" target="_blank">Wiki</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="http://wiki.encuestame.org/display/~juanpicado/" target="_blank">Blog</a>
+              </li>
+              <li class="divider"></li>
+              <li>
                 <a href="#contributors">Contributors</a>
               </li>
-
               <li class="divider"></li>
-              <li class="has-dropdown">
-                <a class="active" href="#">Other Links</a>
-                <ul class="dropdown">
-                  <li>
+              <li>
+                <a href="http://issues.encuestame.org/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel" target="_blank">Roadmap</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="https://groups.google.com/forum/?fromgroups&hl=es#!forum/encuestame" target="_blank">
+                    Need Help?
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+
+      </ul>
+
+      <ul class="right">
+        <li class="has-dropdown">
+          <a class="active" href="#">Other Links</a>
+
+          <ul class="dropdown">
+           <li>
                     <label>More Info</label>
                   </li>
                   <li>
                     <a href="https://groups.google.com/forum/?fromgroups&hl=es#!forum/encuestame" target="_blank" class="">Forum</a>
                   </li>
                   <li>
-                    <a href="http://code.encuestame.org">Browse the Code</a>
+                  <a href="http://code.encuestame.org">
+                        Browse the Code
+                  </a>
                   </li>
                   <li>
-                    <a href="http://wiki.encuestame.org/display/~juanpicado/">Blog</a>
+                    <a href="http://stats.encuestame.org">
+                        Git Stats
+                    </a>
                   </li>
                   <li>
-                    <a href="http://stats.encuestame.org">Git Stats</a>
+                    <a href="http://ci.encuestame.org">
+                        Build Status
+                    </a>
                   </li>
                   <li>
-                    <a href="http://ci.encuestame.org">Build Status</a>
+                    <a href="http://issues.encuestame.org">
+                        Bug Tracking
+                      </a>
                   </li>
-                  <li>
-                    <a href="http://issues.encuestame.org">Bug Tracking</a>
-                  </li>
-                  <li>
-                    <a href="http://wiki.encuestame.org">Wiki</a>
-                  </li>
-                  <li>
-                    <label>About</label>
-                  </li>
-                  <li>
-                    <a href="http://wiki.encuestame.org">Wiki</a>
-                  </li>
-                  <li>
-                    <a href="#">See all &rarr;</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="divider"></li>
-            </ul>
-
-            <!-- Right Nav Section --> </section>
-        </nav>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
 
         <!-- End Header and Nav -->
 

@@ -26,6 +26,7 @@ define(["jquery",
          "views/DownloadFeed",
          "views/ReleaseNotes",
          "models/Note",
+         "support/Constants",
          "collections/NoteCollection",
         "text!templates/master/download.html"],
 
@@ -34,6 +35,7 @@ define(["jquery",
              DownloadFeed,
              ReleaseNotes,
              Note,
+             Constants,
              NoteCollection,
              template) {
 
@@ -52,20 +54,25 @@ define(["jquery",
              */
             render: function() {
                 this.$el.empty();
-                this.template = _.template(template, {});
+                console.log("template", template, Constants);
+                this.template = _.template(template, Constants);
                 this.$el.append($(this.template));
                 new DownloadFeed({el: this.$el.find(".download-feed")});
                 var notes = new NoteCollection();
-                var create_note = function (title, content, url) {
+                var create_note = function (title, content, url, date) {
                         var note = new Note({
                             title : title,
                             url : url,
+                            date : date,
                             content : content
                         });
                         notes.add(note);
                 };
-                create_note("Encuestame 1.146RC1 Release Notes", "What's new in the Encuestame 1.146RC1 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.146RC1+Release+Notes');
-                create_note("Encuestame 1.145 Release Notes", "What's new in the Encuestame 1.145 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.145+Release+Notes');
+                create_note("Encuestame 1.146RC1 Release Notes", "What's new in the Encuestame 1.146RC1 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.146RC1+Release+Notes', 1346104800000);
+                create_note("Encuestame 1.145 Release Notes", "What's new in the Encuestame 1.145 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.145+Release+Notes', 1341093600000);
+                create_note("Encuestame 1.144 Release Notes", "What's new in the Encuestame 1.144 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.144+Release+Notes', 1335564000000);
+                create_note("Encuestame 1.143 Release Notes", "What's new in the Encuestame 1.143 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.143+Release+Notes', 1331247600000);
+                create_note("Encuestame 1.142 Release Notes", "What's new in the Encuestame 1.142 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.142+Release+Notes', 1330642800000);
                 new ReleaseNotes({ collection : notes, el: this.$el.find(".release-notes")});
                 return this;
               }

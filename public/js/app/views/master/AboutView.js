@@ -23,21 +23,13 @@
  */
 define(["jquery",
          "backbone",
-        "views/Tweets",
-        "support/Slider",
-        "views/FacebookFeed",
-        "views/GitHubFeed",
-        "text!templates/master/source.html"],
+        "text!templates/master/about.html"],
 
     function($,
              Backbone,
-             Tweets,
-             SliderSupport,
-             FacebookFeed,
-             GitHubFeed,
             template) {
 
-        var IndexView = Backbone.View.extend({
+        var AboutView = Backbone.View.extend({
 
             el: $("#content"),
 
@@ -51,19 +43,14 @@ define(["jquery",
              * @method
              */
             render: function() {
-                console.log("el:", this.$el);
                 this.$el.empty();
                 this.template = _.template(template, {}),
                 this.$el.append($(this.template));
-                new Tweets({el: this.$el.find(".tweet-list")});
-                new FacebookFeed({el: this.$el.find(".fb-list")});
-                new GitHubFeed({el: this.$el.find(".gh-list")});
-                new SliderSupport(this.$el.find("#featured"));
                 return this;
               }
             });
-        // Returns the View class
-        return IndexView;
+        // Returns the AboutView class
+        return AboutView;
 
     }
 
