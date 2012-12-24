@@ -28,10 +28,16 @@ var baseConfig = {
   name: "libs/almond",
 
   // Removes third-party license comments
-  preserveLicenseComments: true,
+  preserveLicenseComments: false,
 
   // Uses uglify.js for minification
-  optimize: "uglify"
+  optimize: "uglify",
+
+  logLevel: 0,
+
+  //cssIn: "../css/style.css",
+
+  //out: "../public/js/app/config/enme.min.css",
 
  };
 
@@ -39,20 +45,6 @@ var baseConfig = {
 // be mixed into both the mobile and desktop builds below.
 
 var configs = [
-
-    // {
-
-    //     // Tells Require.js to look at mobileInit.js for all mobile shim and path configurations
-    //     //mainConfigFile: "../public/js/app/config/MobileInit.js",
-
-    //     // Points to mobileInit.js (Remember that "mobile" is the module name for mobileInit.js)
-    //     //include: ["mobile"],
-
-    //     // The optimized mobile build file will put into the app directory
-    //     out: "../public/js/app/config/MobileInit.min.js"
-
-    // },
-
     {
 
         // Tells Require.js to look at desktopInit.js for all desktop shim and path configurations
@@ -62,10 +54,9 @@ var configs = [
         include: ["desktop"],
 
         // The optimized desktop build file will put within the app directory
-        out: "../public/js/app/config/DesktopInit.min.js"
+        out: "../public/js/app/config/enme.min.js"
 
     }
-
 ];
 
 // Function used to mix in baseConfig to a new config target
@@ -88,7 +79,6 @@ function mix(target) {
 //Create a runner that will run a separate build for each item
 //in the configs array. Thanks to @jwhitley for this cleverness
 var runner = configs.reduceRight(function(prev, currentConfig) {
-
   return function (buildReportText) {
 
     requirejs.optimize(mix(currentConfig), prev);
