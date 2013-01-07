@@ -35,13 +35,13 @@ define(["jquery"],function($) {
     		github : "https://github.com/encuestame/encuestame/commits/development.atom",
     		wiki : "http://wiki.encuestame.org/createrssfeed.action?types=page&types=blogpost&spaces=~juanpicado&spaces=RELEASE&title=Encuestame+Release+Feed&labelString%3D&excludedSpaceKeys%3D&sort=modified&maxResults=10&timeSpan=300&confirm=Create+RSS+Feed&showContent=false&os_authType=basic",
 
-    	},
-    	footer : {
-    		facebook : "http://www.facebook.com/pages/encuestame/80467777529?bookmark_t=page",
-    		twitter : 'http://www.twitter.com/encuestame',
-    		ohloh : 'http://ohloh.net/p/encuestame',
-    		source : 'http://sourceforge.net/projects/encuestame/'
-    	}
-    };
+    	   }
+        };
+        _CONST['footer'] = {
+            facebook : "http://www.facebook.com/pages/encuestame/80467777529?bookmark_t=page",
+            twitter : 'http://www.twitter.com/encuestame',
+            ohloh : 'http://ohloh.net/p/encuestame',
+            source : 'http://sourceforge.net/projects/encuestame/'
+        };
     return _CONST;
 });

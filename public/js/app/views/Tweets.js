@@ -31,13 +31,13 @@ define(["jquery",
              */
             getTwitterSearch : function (_template) {
                     $.ajax({
-                        url: Constants.rss.twitter,
+                        url: Constants['rss']['twitter'],
                         type: 'GET',
                         dataType: 'jsonp',
                         data: {
                             screen_name: "encuestame",
                             include_rts: true,
-                            count: 10,
+                            count: 4,
                             include_entities: true
                         },
                         success: function(data, textStatus, xhr) {

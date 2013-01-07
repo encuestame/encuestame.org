@@ -1,13 +1,7 @@
- <li id="t_<%= id %>" class="tweet-item">
- 		<div class="left">
-			<img src="<%= user.profile_image_url %>" alt="<%= user.name %>" width="45"  height="45"/>
-		</div>
-		<div class="right">
-			<a href="http://twitter.com/<%= user.name %>" title="<%= user.name %>">@<%= text %></a>
-			<p>
-				<%= text %>
-			</p>
-			<span class="date"><%=  moment(created_at).fromNow() %></span>
-		</div>
-
+<li class="feed-item">
+	<a href="http://twitter.com/<%= user.name %>" title="<%= user.name %>">@<%= text %></a>
+	<p>
+		<%= text %>
+	</p>
+	<span class="date"><%=  moment(created_at).fromNow() %></span>
 </li>

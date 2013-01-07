@@ -29,7 +29,7 @@ define(["jquery",
         "views/GitHubFeed",
         "support/Constants",
         "i18n!nls/Index",
-        //"i18n!nls/general",
+        'support/IE',
         "text!templates/master/index-view.html"],
 
     function($,
@@ -40,6 +40,7 @@ define(["jquery",
              GitHubFeed,
              Constants,
              Index,
+             IE,
              template) {
 
         var IndexView = Backbone.View.extend({

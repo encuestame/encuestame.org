@@ -93,24 +93,29 @@ require.config({
 });
 
 // Includes Desktop Specific JavaScript files here (or inside of your Desktop router)
-require(["jquery", "domReady", "backbone", "routers/DesktopRouter", "foundation", "colorbox", "foundation", 'moment'],
+require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE', "foundation", "colorbox", "foundation", 'moment'],
 
-  function($, domReady, Backbone, DesktopRouter) {
-
-     // Instantiates a new Desktop Router instance
-     new DesktopRouter();
-
-     var Modernizr = window.Modernizr;
-     $(document).foundationNavigation();
-     $(document).foundationTopBar();
-     // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
-      if (Modernizr.touch && !window.location.hash) {
-        $(window).load(function () {
-          setTimeout(function () {
-            window.scrollTo(0, 1);
-          }, 0);
-        });
-      }
+  function($, domReady, Backbone, DesktopRouter, IE) {
+    var _IE = new IE();
+    if (_IE.checkVersion()) {
+       // Instantiates a new Desktop Router instance
+       new DesktopRouter();
+       var Modernizr = window.Modernizr;
+       $(document).foundationNavigation();
+       $(document).foundationTopBar();
+       // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
+        if (Modernizr.touch && !window.location.hash) {
+          $(window).load(function () {
+            setTimeout(function () {
+              window.scrollTo(0, 1);
+            }, 0);
+          });
+        }
+    } else {
+      var twitter = '<a class="twitter-timeline" href="https://twitter.com/encuestame" data-widget-id="288261822128193537">Tweets por @encuestame</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
+      var _ie_message = 'Greetings, time traveller. Welcome to the future! Try our amazing new browser technologies.';
+      $('body').html('<div class="non"><a href="http://www.encuestame.org"><img src="img/logos/encuestame/logo_high.png" width="500" height="118"></a><h3 class="non_ie_support">' + _ie_message + '</h3><p> <a href="http://wiki.encuestame.org/display/DOC/Supported+Platforms" target="_blank">Encuestame doesn\'t support Internet Exporer 6 </a> <br/> <a href="http://www.ie6countdown.com/" target="_blank">Internet Exporer 6 Countdown</a> <br/><a href="http://www.ie6death.com/" target="_blank">Internet Exporer 6 is dead</a><br/> ' + twitter +' </p></div>');
+    }
   }
 
 );
