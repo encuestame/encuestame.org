@@ -63,7 +63,7 @@ define(["jquery",
                 new Tweets({el: this.$el.find(".tweet-list")});
                 new FacebookFeed({el: this.$el.find(".fb-list")});
                 new GitHubFeed({el: this.$el.find(".gh-list")});
-                new SliderSupport(this.$el.find("#featured"));
+                //new SliderSupport(this.$el.find("#featured"));
                 return this;
               }
             });

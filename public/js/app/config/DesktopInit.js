@@ -39,6 +39,8 @@ require.config({
 
       "colorbox": "libs/plugins/jquery.colorbox",
 
+      "slides.jquery": "libs/plugins/slides.jquery",
+
       "text": "libs/plugins/text",
 
       // Application Folders
@@ -71,6 +73,9 @@ require.config({
        // jQuery Plugin Colorbox
       "colorbox": ["jquery"],
 
+
+      "slides.jquery" : ["jquery"],
+
        // backbone layoutmanage
       //"backbone.layoutmanager": ["backbone"],
 
@@ -93,7 +98,7 @@ require.config({
 });
 
 // Includes Desktop Specific JavaScript files here (or inside of your Desktop router)
-require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE', "foundation", "colorbox", "foundation", 'moment'],
+require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE', "foundation", "colorbox", "foundation", 'moment', 'slides.jquery'],
 
   function($, domReady, Backbone, DesktopRouter, IE) {
     var _IE = new IE();
