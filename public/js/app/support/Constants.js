@@ -25,7 +25,7 @@ define(["jquery"],function($) {
 
     var _CONST = {
     	version : "1.146",
-    	url_download : 'http://sourceforge.net/projects/encuestame/files/encuestame_beta/1.146/',
+    	url_download : 'http://sourceforge.net/projects/encuestame/files/latest/download',
     	demo_url : "http://demo.encuestame.org",
     	github_repo : "http://github.com/encuestame",
     	rss : {
