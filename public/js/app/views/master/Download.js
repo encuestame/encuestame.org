@@ -67,6 +67,7 @@ define(["jquery",
                         });
                         notes.add(note);
                 };
+                create_note("Encuestame 1.146-FINAL Release Notes", "This release it's more stable, several bug corrections and new user interfaces, improved the publication of surveys and new build system, IE support, responsive design, improved the social network distribution and user administration.", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.146-FINAL+Release+Notes', 1346104800000);
                 create_note("Encuestame 1.146RC1 Release Notes", "What's new in the Encuestame 1.146RC1 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.146RC1+Release+Notes', 1346104800000);
                 create_note("Encuestame 1.145 Release Notes", "What's new in the Encuestame 1.145 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.145+Release+Notes', 1341093600000);
                 create_note("Encuestame 1.144 Release Notes", "What's new in the Encuestame 1.144 beta release", 'http://wiki.encuestame.org/display/RELEASE/Encuestame+1.144+Release+Notes', 1335564000000);
