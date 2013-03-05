@@ -35,7 +35,6 @@ define(["jquery",
 
             // View constructor
             initialize: function() {
-                console.log("init");
                 this.render();
             },
 

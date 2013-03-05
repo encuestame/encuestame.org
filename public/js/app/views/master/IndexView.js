@@ -24,7 +24,6 @@
 define(["jquery",
          "backbone",
         "views/Tweets",
-        "support/Slider",
         "views/FacebookFeed",
         "views/GitHubFeed",
         "support/Constants",
@@ -35,7 +34,6 @@ define(["jquery",
     function($,
              Backbone,
              Tweets,
-             SliderSupport,
              FacebookFeed,
              GitHubFeed,
              Constants,
@@ -47,15 +45,10 @@ define(["jquery",
 
             el: $("#content"),
 
-            // View constructor
             initialize: function() {
                 this.render();
             },
 
-            /**
-             *
-             * @method
-             */
             render: function() {
                 this.$el.empty();
                 this.template = _.template(template, Constants),
@@ -63,11 +56,9 @@ define(["jquery",
                 new Tweets({el: this.$el.find(".tweet-list")});
                 new FacebookFeed({el: this.$el.find(".fb-list")});
                 new GitHubFeed({el: this.$el.find(".gh-list")});
-                //new SliderSupport(this.$el.find("#featured"));
                 return this;
               }
             });
-        // Returns the View class
         return IndexView;
 
     }

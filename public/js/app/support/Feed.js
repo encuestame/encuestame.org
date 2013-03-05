@@ -21,7 +21,7 @@
  *  @namespace Support
  *  @class Feed
  */
-define(["jquery", "foundation"],function($){
+define(["jquery"],function($){
 
     var Feed = function (url, callback, params) {
 

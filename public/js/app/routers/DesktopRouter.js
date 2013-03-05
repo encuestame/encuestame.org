@@ -29,8 +29,7 @@ define(["jquery",
         "views/master/Download",
         "views/master/Features",
         "views/master/FooterView",
-        "views/master/AboutView",
-        "foundation"],
+        "views/master/AboutView"],
         function($,
                  Backbone,
                  domReady,
@@ -39,8 +38,7 @@ define(["jquery",
                  Download,
                  Features,
                  FooterView,
-                 AboutView,
-                 foundation) {
+                 AboutView) {
 
         var DesktopRouter = Backbone.Router.extend({
 
@@ -75,7 +73,6 @@ define(["jquery",
             features : function () {
                  domReady(function () {
                     var node  = $("#content");
-                    console.log("node", Features);
                     new Features({el: node});
                     new FooterView();
                 });
