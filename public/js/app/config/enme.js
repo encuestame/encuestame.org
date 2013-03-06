@@ -93,7 +93,7 @@ require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE'
     var _IE = new IE();
 
     //TODO: add domReady
-    $('#home').carousel();
+    //$('#hxome').carousel();
 
     if (_IE.checkVersion()) {
        // Instantiates a new Desktop Router instance
