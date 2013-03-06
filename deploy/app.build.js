@@ -16,7 +16,7 @@ var baseConfig = {
 
     //"mobile": "app/config/MobileInit",
 
-    "desktop": "app/config/DesktopInit"
+    "desktop": "app/config/enme"
 
   },
 
@@ -48,7 +48,7 @@ var configs = [
     {
 
         // Tells Require.js to look at desktopInit.js for all desktop shim and path configurations
-        mainConfigFile: "../public/js/app/config/DesktopInit.js",
+        mainConfigFile: "../public/js/app/config/enme.js",
 
         // Points to desktopInit.js (Remember that "desktop" is the module name for desktopInit.js)
         include: ["desktop"],

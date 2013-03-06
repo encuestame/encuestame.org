@@ -87,15 +87,15 @@ require.config({
 });
 
 // Includes Desktop Specific JavaScript files here (or inside of your Desktop router)
-require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE', "colorbox", 'moment', 'bootstrap'],
+require(["jquery", "domReady", "backbone", 'bootstrap'],
 
   function($, domReady, Backbone, DesktopRouter, IE) {
-    var _IE = new IE();
+    //var _IE = new IE();
 
     //TODO: add domReady
-    //$('#hxome').carousel();
+    $('#hxome').carousel();
 
-    if (_IE.checkVersion()) {
+    //if (_IE.checkVersion()) {
        // Instantiates a new Desktop Router instance
        //new DesktopRouter();
        var Modernizr = window.Modernizr;
@@ -121,35 +121,35 @@ require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE'
           var section_id = $this.attr('href');
           var new_top = $(section_id).offset().top;
           $('html, body').animate({
-            scrollTop: new_top
-          }, 700);
-        // } else if($(this).hasClass('anchor') && $(this).parents('.section-brand-love').length) {
-        //   //show_services();
-        // } else if($(this).hasClass('back') && $(this).parents('.services').length) {
-        //   ///hide_services();
-        }
-        return false;
-      }).on('scroll', function() {
-        determine_location();
-        console.log("scrolllll");
-      var win_top = $(window).scrollTop();
-      var win_hei = $(window).height();
-    // if($('.section-brand-love').length && win_top + win_hei*.4 >= $('.section-brand-love:eq(0)').offset().top) {
-    //   show_brands();
-    // }
-    // if(win_top + win_hei*.4 >= $('#contact').offset().top) {
-    //   show_contact();
-    // }
-    // if($('.section-stories').length && win_top + win_hei*.4 >= $('.section-stories:eq(0)').offset().top) {
-    //   show_stories();
-    // }
-    // if($('.section-who-and-how').length && win_top + win_hei*.4 >= $('.section-who-and-how:eq(0)').offset().top) {
-    //   show_bio();
-    // }
-    // if($('.section-home').length && win_top + win_hei*.4 >= $('.section-home:eq(0)').offset().top) {
-    //   show_home();
-    // }
-  });
+                  scrollTop: new_top
+                }, 700);
+              // } else if($(this).hasClass('anchor') && $(this).parents('.section-brand-love').length) {
+              //   //show_services();
+              // } else if($(this).hasClass('back') && $(this).parents('.services').length) {
+              //   ///hide_services();
+              }
+              return false;
+            }).on('scroll', function() {
+              determine_location();
+              //console.log("scrolllll");
+            var win_top = $(window).scrollTop();
+            var win_hei = $(window).height();
+          // if($('.section-brand-love').length && win_top + win_hei*.4 >= $('.section-brand-love:eq(0)').offset().top) {
+          //   show_brands();
+          // }
+          // if(win_top + win_hei*.4 >= $('#contact').offset().top) {
+          //   show_contact();
+          // }
+          // if($('.section-stories').length && win_top + win_hei*.4 >= $('.section-stories:eq(0)').offset().top) {
+          //   show_stories();
+          // }
+          // if($('.section-who-and-how').length && win_top + win_hei*.4 >= $('.section-who-and-how:eq(0)').offset().top) {
+          //   show_bio();
+          // }
+          // if($('.section-home').length && win_top + win_hei*.4 >= $('.section-home:eq(0)').offset().top) {
+          //   show_home();
+          // }
+        });
 
      var top_positions = [], sections = [];
 
@@ -164,21 +164,21 @@ require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE'
         });
 
         determine_location();
-        console.log("dsds", top_positions);
+        //console.log("dsds", top_positions);
       }
 
 
       function determine_location() {
 
-        console.log("determine_location", sections);
+        //console.log("determine_location", sections);
 
         var win_top = $(window).scrollTop();
 
         for(i=0;i<top_positions.length;i++) {
           if(win_top + 250 >= top_positions[i] && win_top < top_positions[i+1] || win_top + 250 >= top_positions[i] && top_positions[i+1] == undefined) {
-            console.log("determine_location", top_positions[i]);
+            //console.log("determine_location", top_positions[i]);
             // remove
-            console.log('2', $('.navbar li').length);
+            //console.log('2', $('.navbar li').length);
             if ($('.navbar li').length) {
                   $('.navbar .active').removeClass('active');
             }
@@ -196,11 +196,11 @@ require(["jquery", "domReady", "backbone", "routers/DesktopRouter", 'support/IE'
 
 
 
-    } else {
-      var twitter = '<a class="twitter-timeline" href="https://twitter.com/encuestame" data-widget-id="288261822128193537">Tweets por @encuestame</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
-      var _ie_message = 'Greetings, time traveller. Welcome to the future! Try our amazing new browser technologies.';
-      $('body').html('<div class="non"><a href="http://www.encuestame.org"><img src="img/logos/encuestame/logo_high.png" width="500" height="118"></a><h3 class="non_ie_support">' + _ie_message + '</h3><p> <a href="http://wiki.encuestame.org/display/DOC/Supported+Platforms" target="_blank">Encuestame doesn\'t support Internet Exporer 6 </a> <br/> <a href="http://www.ie6countdown.com/" target="_blank">Internet Exporer 6 Countdown</a> <br/><a href="http://www.ie6death.com/" target="_blank">Internet Exporer 6 is dead</a><br/> ' + twitter +' </p></div>');
-    }
+    // } else {
+    //   var twitter = '<a class="twitter-timeline" href="https://twitter.com/encuestame" data-widget-id="288261822128193537">Tweets por @encuestame</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
+    //   var _ie_message = 'Greetings, time traveller. Welcome to the future! Try our amazing new browser technologies.';
+    //   $('body').html('<div class="non"><a href="http://www.encuestame.org"><img src="img/logos/encuestame/logo_high.png" width="500" height="118"></a><h3 class="non_ie_support">' + _ie_message + '</h3><p> <a href="http://wiki.encuestame.org/display/DOC/Supported+Platforms" target="_blank">Encuestame doesn\'t support Internet Exporer 6 </a> <br/> <a href="http://www.ie6countdown.com/" target="_blank">Internet Exporer 6 Countdown</a> <br/><a href="http://www.ie6death.com/" target="_blank">Internet Exporer 6 is dead</a><br/> ' + twitter +' </p></div>');
+    // }
   }
 
 );
