@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon"  type="image/png"  href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>encuestame open source social survey</title>
+  <meta name="description" content="encuestame is a open source web appication developed in java an javascript to create online surveys. With an advanced system of administration of projects for businesses or individuals, control of pollsters, capturing online, statistics, reports and graphs." />
+  <meta name="keywords" content="survey,open source, free, java, dojo toolkit" />
+  <meta name="author" content="Juan Picado, Paola Morales" />
+  <meta name="copyright" content="encuestame" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <!-- build:css css/app.css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- endbuild -->
+
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png"/>
+</head>
+
+<body>
+
+  <div class="navbar-wrapper">
+
+    <div class="container">
+
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active">
+              <a class="main-link" href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="main-link" href="#features">
+                  Features
+              </a>
+            </li>
+            <li>
+              <a class="main-link" href="#download">Download</a>
+            </li>
+            <li>
+              <a class="main-link" href="#contributors">Contributors</a>
+            </li>
+            <li>
+              <a class="main-link" href="#about">About</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                More <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://blog.encuestame.org" target="_blank">Blog</a>
+                </li>
+               <li>
+                  <a href="http://wiki.encuestame.org" target="_blank">Documentation</a>
+                </li>
+
+                <li>
+                  <a href="https://groups.google.com/forum/?fromgroups&hl=es#!forum/encuestame" target="_blank"> Groups </a>
+                </li>
+                <li class="divider"></li>
+                <li class="nav-header">Development</li>
+                <li>
+                  <a href="http://ci.encuestame.org/" target="_blank">Builds</a>
+                </li>
+                <li>
+                  <a href="http://issues.encuestame.org/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel" target="_blank">RoadMap</a>
+                </li>
+                <li>
+                  <a href="http://issues.encuestame.org/" target="_blank">Issues</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="home" class="carousel slide section" style="background: #E7A441;">
+  <div class="carousel-inner" style="box-shadow: 0px 0px 11px 0px rgb(94, 94, 94);">
+    <div class="item active">
+
+      <div class="container">
+        <div class="row" style="height:500px;">
+          <div class="home-carrousel">
+              <div class="span6">
+              <div class="jumbotron carousel-caption">
+                <h1>Social Survey CMS</h1>
+                <p class="lead">
+                   A powerful survey-oriented management system: organize your surveys and share them through your multiple social networks in the blink of an eye.
+                </p>
+                <a class="btn btn-large btn-success" href="http://sourceforge.net/projects/encuestame/files/latest/download" target="_blank"> <i class="icon-download icon-2x"></i>
+                  <span style="margin-left:5px;">Download Now</span>
+                  <div class="shameless-self-promotion">
+                </div>
+                </a>
+                <div class="version-heading">
+                  <small>Version 1.146 • Created &amp; Maintained by @jotadeveloper & @dianmora</small>
+                </div>
+              </div>
+              </div>
+              <div class="span6">
+                <div class="image-caption enme-logo-m">
+                  <img src="img/logo_front.png"  >
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="item">
+
+
+   <div class="container">
+          <div class="row" style="height:500px;">
+            <div class="home-carrousel">
+                <div class="span6">
+                <div class="jumbotron carousel-caption">
+                 <h1>Open Source Project</h1>
+            <p class="lead">
+              It is free, open source, and always will be. Licensed as Apache License 2.0, Encuestame is based on Java and Dojo Toolkit.
+            </p>
+                   <a class="btn btn-large btn-success" href="https://github.com/encuestame/" target="_blank"> <i class="icon-github icon-2x"></i>
+              <span style="margin-left:5px;">Get Source</span>
+            </a>
+
+                </div>
+                </div>
+                <div class="span6">
+                  <div class="image-caption">
+                    <img src="img/github-enme.png" class="shadow" style="width:100%;"/>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+
+
+    </div>
+    <div class="item">
+
+
+       <div class="container">
+          <div class="row" style="height:500px;">
+            <div class="home-carrousel">
+                <div class="span6">
+                <div class="jumbotron carousel-caption">
+                 <h1>Check the Demo</h1>
+          <p class="lead">
+              Have a look at the app running and try all its features. It's free as in speech
+          </p>
+          <a class="btn btn-large btn-success" href="http://demo.encuestame.org" target="_blank">
+            <i class="icon-share-alt icon-2x"></i>
+            <span style="margin-left:5px;">Try it now!</span>
+          </a>
+
+                </div>
+                </div>
+                <div class="span6">
+                  <div class="image-caption">
+                    <img src="img/front_demo.png" class="shadow" style="width:80%;" />
+
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+  <a class="left carousel-control" href="#home" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#home" data-slide="next">&rsaquo;</a>
+</div>
+
+<div class="container marketing features">
+
+  <div class="row fea-resume">
+    <div class="span4">
+      <img class="img-circle" src="img/social_network.png">
+      <h2>
+          Social Surveys
+      </h2>
+      <p>
+        Share your surveys easily by connecting with your favorite social networks.
+      </p>
+      <p>
+        <a class="btn main-link" href="#features">View details &raquo;</a>
+      </p>
+    </div>
+    <div class="span4">
+      <img class="img-circle" src="img/08_settings.png">
+      <h2>
+          Quick Creation
+      </h2>
+      <p>
+        Creating a survey is very easy and intuitive with a lot of features out of the box.
+      </p>
+      <p>
+        <a class="btn main-link" href="#features3">View details &raquo;</a>
+      </p>
+    </div>
+    <div class="span4">
+      <img class="img-circle"  width="128" height="128" src="img/iphone_small.png">
+      <h2>
+          Mobile
+      </h2>
+      <p>
+        Enjoy it in the mobile version; start, manage, vote and share your surveys anytime  anywhere.
+      </p>
+      <p>
+        <a class="btn main-link" href="#features2">View details &raquo;</a>
+      </p>
+    </div>
+
+  </div>
+
+  <hr class="featurette-divider">
+
+
+  <div id="features" class="featurette section">
+    <img class="featurette-image pull-right" src="img/mac-enme2.png">
+    <h2 class="featurette-heading">
+      Create a survey on few steps.
+      <span class="muted">And share it.</span>
+    </h2>
+    <p class="lead">
+      Encuestame supports multiple social networks like Twitter, Facebook, Identi.ca, LinkedIn and many more in the future, you can manage several social network accounts and publish on all of them in one single step.
+    </p>
+  </div>
+
+  <hr class="featurette-divider" id="features2">
+
+  <div  class="featurette">
+    <img class="featurette-image pull-right" src="img/mobile_iphone_enne.png">
+    <h2 class="featurette-heading">
+      Mobile is the future,
+      <span class="muted">Encuestame is mobile.</span>
+    </h2>
+    <p class="lead">
+      Supports most of phones and tablets, offers you mobility, vote in your device, review all your created surveys, share your statistics, comment a popular question or review your profile.
+    </p>
+  </div>
+
+  <hr class="featurette-divider" id="features3" >
+
+  <div class="featurette">
+    <img class="featurette-image pull-right feature-shadow" src="img/page1.png" >
+    <h2 class="featurette-heading">
+      Fast and Furious
+      <span class="muted">Survey</span>
+    </h2>
+    <p class="lead">
+      We created an usable and quick user interface to create different type of surveys, drag an drop, suggestion, inline edition and other very cool components to create your surveys quickly.
+    </p>
+  </div>
+
+  <div class="featurette-divider"></div>
+</div>
+<div id="download" class="home-discover section">
+  <div>
+    <section class="clearfix">
+      <div class="container download">
+        <h1 class="featurette-heading">Download</h1>
+      <p class="lead">
+        The WAR file is ready to run. If you need more information about the installation, please
+        <a href="http://wiki.encuestame.org/display/DOC/Installing+Encuestame" target="_blank">read this.</a>
+      </p>
+          <div class="row">
+
+            <div class="span6">
+              <i class="bookmarking"></i>
+              <h3>
+                  Get the Build
+              </h3>
+
+
+               <div>
+
+                <h4> <span class="badge badge-warning">1</span> Download the zip file <a target="_blank" href="http://sourceforge.net/projects/encuestame/files/encuestame_beta/" class="btn btn-success " style="box-shadow:none;">Go to SourceForce</a> </h4>
+
+              </div>
+              <div>
+                    <h4>  <span class="badge badge-warning">2</span>  Unzip the file and the .war</h4>
+              </div>
+              <div>
+                    <h4>  <span class="badge badge-warning">3</span>  Install it on your web container and run it </h4>
+              </div>
+
+
+            </div>
+
+            <div class="span6">
+              <i class="bookmarking"></i>
+                  <h3>
+                    or build it yourself
+                  </h3>
+                  <section>
+                      <div>
+                        <h4> <span class="badge badge-warning">1</span> Clone directly from the repository </h4>
+                        <input type="text" value="git clone git@github.com:encuestame/encuestame.git" style="width:400px;">
+                      </div>
+                      <div>
+                        <h4> <span class="badge badge-warning"> 2 </span> or download the last tag as a zip </h4>
+                        <a class="btn btn-primary" href="https://github.com/encuestame/encuestame/archive/encuestame-1.146.zip" type="button">
+                            Get the source
+                        </a>
+                      </div>
+                       <div>
+                        <h4> <span class="badge badge-warning"> 3 </span> To build from the source
+                          <a href="http://wiki.encuestame.org/display/DOC/How+to+build+Encuestame" target="_blank">
+                              follow this guide.
+                          </a>
+                        </h4>
+                      </div>
+                  </section>
+            </div>
+
+          </div>
+
+    </section>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<hr id="contributors" class="featurette-divider section">
+<h1 class="featurette-heading">The Team</h1>
+<section style="margin-top:40px;">
+  <div class="row team">
+
+    <div class="span6">
+      <img src="http://www.gravatar.com/avatar/c676605ff39f9c7a43f5518a8ce54e12?s=230" width="100" height="100" style="border-radius: 100px;box-shadow: 0px 1px 11px 2px rgb(105, 105, 105); text-aling:center;"/>
+      <h2>Juan Carlos Picado</h2>
+      <blockquote>
+        <p>
+          I like to define myself as a Front End Engineer because I love it. Responsible of the architecture, infraestructure and user interfaces, the performance is my best skill because always it's possible make the Javascript more fast and small. Dojo is my favourite framework.
+        </p>
+
+      <div class="social">
+        <a class="linkedin-profileinsider-inline"
+                            href="http://at.linkedin.com/in/jotadeveloper" target="_blank">
+          <img src="img/social/fc-webicon-linkedin-m.png"/>
+        </a>
+        <a class="linkedin-profileinsider-inline"
+                            href="https://github.com/juanpicado" target="_blank">
+          <img src="img/social/fc-webicon-github-m.png"/>
+        </a>
+        <a class="linkedin-profileinsider-inline"
+                            href="http://www.twitter.com/jotadeveloper" target="_blank">
+          <img src="img/social/fc-webicon-twitter-m.png"/>
+        </a>
+        <a class="linkedin-profileinsider-inline"
+                            href="http://careers.stackoverflow.com/jotadeveloper" target="_blank">
+          <img src="img/social/fc-webicon-stack.png"/>
+        </a>
+      </div>
+       </blockquote>
+    </div>
+    <div class="span6">
+      <img src="http://www.gravatar.com/avatar/172ee6b7fe9935425f680f338888299f?s=230" width="100" height="100" style="border-radius: 100px;box-shadow: 0px 1px 11px 2px rgb(105, 105, 105); text-aling:center;"/>
+      <h2>Diana Paola Morales</h2>
+      <blockquote>
+        <p>
+          I'm software engineer Java fan, my favourite framework is Spring, the quality of my code is my best skill and always doing my best. I'm the responsible of all backend of Encuestame.
+        </p>
+
+      <div class="social">
+        <a class="linkedin-profileinsider-inline"
+                            href="http://at.linkedin.com/in/dianmorales" target="_blank">
+          <img src="img/social/fc-webicon-linkedin-m.png"/>
+        </a>
+        <a class="linkedin-profileinsider-inline"
+                            href="https://github.com/dianmorales" target="_blank">
+          <img src="img/social/fc-webicon-github-m.png"/>
+        </a>
+        <a class="linkedin-profileinsider-inline"
+                            href="http://www.twitter.com/dianmora" target="_blank">
+          <img src="img/social/fc-webicon-twitter-m.png"/>
+        </a>
+      </div>
+       </blockquote>
+    </div>
+
+  </div>
+  <div style="margin-top:40px;">
+    <p class="lead">
+      Feel free to contribute to this project. If you want to be a committer,
+      <a href="http://wiki.encuestame.org/display/DEVELOPMENT/Commiters+Guidelines" target="_blank" >follow this guide.</a>
+      You can check the complete list of contributors
+      <a href="https://github.com/encuestame/encuestame/graphs/contributors" target="_blank">here.</a>
+    </p>
+  </div>
+</section>
+</div>
+
+<div class="container marketing">
+<hr  id="about"  class="featurette-divider section">
+<h1  class="featurette-heading">About Us</h1>
+<section style="margin-top:40px;">
+  <h3>History</h3>
+  <blockquote>
+    <p class="lead">
+      Encuestame is a free open source project created in <strong> 2008 in Nicaragua and Spain </strong> . Now our headquarters are in Austria. We decided to create a RESTFul API to integrate the new User Interface with three party applications. In 2011 we received <a href="http://www.atlassian.com/software/views/open-source-license-request" target="_blank">Atlassian Open Source Licenses</a>, helping our project to become more mature.
+    </p>
+  </blockquote>
+  <h3>RoadMap</h3>
+    <p class="lead">
+      This project is alive, we are working hard every day to offer you a more stable product. Everything related to our roadmap is available in this <a href="http://wiki.encuestame.org/display/Br/Home" target="_blank"> page</a>.
+    </p>
+  <p>
+    <a href='http://www.pledgie.com/campaigns/19050'><img alt='Click here to lend your support to: encuestame open source survey tool and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/19050.png?skin_name=chrome' border='0' /></a>
+    <div>
+      <small>
+        Encuestame doesn't have incomes and is a non-profit and free project. We only accept donations for the maintenance of the infrastructure. Your best contribution for us is your own code.
+      </small>
+    </div>
+  </p>
+</section>
+</div>
+
+<div class="container footer">
+<hr class="featurette-divider">
+<footer>
+  <p class="pull-right">
+    <a href="#home" class="main-link">Back to top</a>
+  </p>
+  <p>
+    &copy; 2013 Copyright Encuestame Team. &middot;
+    <a href="http://www.facebook.com/pages/encuestame/80467777529?bookmark_t=page
+      " target="_blank">
+                Facebook
+    </a>
+    &middot;
+    <a href="http://www.twitter.com/encuestame
+      " target="_blank">
+              Twitter
+    </a>
+    &middot;
+    <a href="http://github.com/encuestame
+      " target="_blank">
+              Github
+    </a>
+  </p>
+  <div class="follow-buttons">
+    <div style="vertical-align:middle; margin-right:20px">
+      <iframe src="http://caolan.github.com/github-buttons/github-btn.html?user=encuestame&amp;repo=encuestame&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+    </div>
+    <div style="vertical-align:middle; margin-right:20px">
+      <iframe src="http://caolan.github.com/github-buttons/github-btn.html?user=encuestame&amp;repo=encuestame&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+    </div>
+
+    <div style="vertical-align:middle; margin-right:20px">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="encuestame" data-hashtags="survey,opensource" data-dnt="true">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <div style="vertical-align:middle; margin-right:20px">
+      <a href="https://twitter.com/encuestame" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @encuestame</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+  <!-- build:js js/amd-app.js -->
+  <script data-main="js/main" src="js/vendor/requirejs/require.js"></script>
+  <!-- endbuild -->
+
+
+<!-- ANALYTICS -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2527438-15']);
+  _gaq.push(['_setDomainName', 'encuestame.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
