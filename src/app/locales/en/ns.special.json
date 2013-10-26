@@ -1,11 +1,24 @@
 {
-    "app": {
-      "name": "i18n",
-      "insert": "you are __youAre__",
-      "child": "__count__ child",
-      "child_plural": "__count__ children",
-      "friend_context": "A friend",
-      "friend_context_male": "A boyfriend",
-      "friend_context_female": "A girlfriend"
+    "input": {
+      "placeholder" : "Search"
+    },
+    "btn": {
+    	"search": "Search"
+    },
+    "menu" : {
+    	"home" : "Home",
+    	"features" : "Features",
+    	"download" : "Download",
+    	"contributors" : "Contributors",
+    	"about" : "About",
+    	"more" : "More",
+    	"blog" : "Blog",
+    	"doc" : "Documentation",
+    	"forum" : "Forum",
+    	"builds" : "Builds",
+    	"issues" : "Issues",
+    	"clover" : "Clover Stats",
+    	"javadoc" : "Javadoc",
+    	"chat" : "Chat"
     }
 }

@@ -49,66 +49,17 @@
       <!-- NAV BAR -->
       <!-- NAV BAR -->
 
-      <div class="navbar navbar-inverse">
+      <!-- <div class="navbar navbar-inverse">
         <div class="navbar-inner">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active">
-              <a class="main-link" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a class="main-link" href="#features">
-                  Features
-              </a>
-            </li>
-            <li>
-              <a class="main-link" href="#download">Download</a>
-            </li>
-            <li>
-              <a class="main-link" href="#contributors">Contributors</a>
-            </li>
-            <li>
-              <a class="main-link" href="#about">About</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                More <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="http://blog.encuestame.org" target="_blank">Blog</a>
-                </li>
-               <li>
-                  <a href="http://www.encuestame.org/wiki" target="_blank">Documentation</a>
-                </li>
-
-                <li>
-                  <a href="https://groups.google.com/forum/?fromgroups&hl=es#!forum/encuestame" target="_blank"> Groups </a>
-                </li>
-                <li class="divider"></li>
-                <li class="nav-header">Development</li>
-                <li>
-                  <a href="http://www.encuestame.org/build" target="_blank">Builds</a>
-                </li>
-                <li>
-                  <a href="http://www.encuestame.org/issues/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel" target="_blank">RoadMap</a>
-                </li>
-                <li>
-                  <a href="http://www.encuestame.org/issues" target="_blank">Issues</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div class="nav-collapse collapse">
         </div>
-      </div>
+      </div> -->
+
     </div>
   </div>
 </div>
@@ -504,7 +455,7 @@
     </a>
   </p>
   <div class="follow-buttons">
-    <div style="vertical-align:middle; margin-right:20px">
+    <!-- <div style="vertical-align:middle; margin-right:20px">
       <iframe src="http://caolan.github.com/github-buttons/github-btn.html?user=encuestame&amp;repo=encuestame&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
     </div>
     <div style="vertical-align:middle; margin-right:20px">
@@ -518,7 +469,7 @@
     <div style="vertical-align:middle; margin-right:20px">
       <a href="https://twitter.com/encuestame" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @encuestame</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
+    </div> -->
   </div>
 </footer>
 
@@ -564,6 +515,7 @@
       <navigation id="menu">
 
       </navigation>
+      <div id="carrousel"></div>
       <article id="content">
 
       </article>
@@ -590,10 +542,9 @@
           </div>
           <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
                     <% _.each( menu, function( item ){ %> 
                       <li>                     
-                          <a href="<%= item.url %>">
+                          <a href="<%= item.url %>" data-i18n="menu.<%= item.label %>">
                               <%= item.label %>
                           </a> 
                       </li>   
@@ -601,26 +552,19 @@
               </ul>
               <form class="navbar-form navbar-left" role="search" action="<%= info.search %>" method="GET">
                 <div class="form-group">
-                  <input type="text" class="form-control" name="queryString" id="queryString" placeholder="Search">
+                  <input type="text" class="form-control" name="queryString" id="queryString" data-i18n="[placeholder]ns.special:input.placeholder;">
                 </div>
-                <button type="submit" class="btn btn-default">
-                  Search
-                </button>
+                <button type="submit" class="btn btn-default" data-i18n="btn.search;"></button>
               </form>   
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Dropdown <b class="caret"></b>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-i18n="menu.more">
+                    <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <% _.each( info.expand_nav, function( item ){ console.log("i", arguments); %> 
+                    <% _.each( info.expand_nav, function( url, label ){ %> 
                         <li>
-                            <a href="#">
-                                Action
+                            <a href="<%= url %>" target="_blank" data-i18n="menu.<%= label %>">
                             </a>
                         </li>
                     <% }); %> 
@@ -629,7 +573,37 @@
               </ul>
           </div>         
       </nav>
-  </script>      
+  </script>   
+
+
+  <script id="carrousel-template" type="text/template"> 
+        <div id="carousel-example-generic" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators"></ol>
+
+         <div class="carro-items">
+
+         </div
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+  </script>
+
+  <script id="carrousel-item" type="text/template"> 
+        <div class="item active">
+          <img src="image.png" alt="image">
+          <div class="carousel-caption">
+              <h3>item</h3>
+              <p>description</p>
+          </div>
+        </div>
+  </script>  
 
 
   <!-- build:js js/init.js -->

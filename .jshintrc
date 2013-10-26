@@ -10,6 +10,7 @@
       , "Backbone" : true
       , "Marionette" : true
       , "C" : true
+      , "i18n" : true      
       , "_" : true
       , "console" : true
       , "alert" : true

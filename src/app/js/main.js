@@ -1,4 +1,4 @@
-/*global require:false, module:false*/
+/*global require:false, t:false, module:false*/
 
 'use strict';
 
@@ -10,7 +10,7 @@ require.config({
 
     jquery : "vendor/jquery/jquery",
 
-    i18next : "vendor/i18next/release/i18next.amd-1.5.7",
+    i18next : "vendor/i18next/release/i18next-1.7.1",
 
     underscore : "vendor/underscore/underscore",
 
@@ -32,6 +32,11 @@ require.config({
     jquery: {
       exports: "jQuery"
     },
+
+    i18next: {
+      deps: ['jquery'],
+      exports: "i18n"
+    },    
 
     bootstrap: {
         //These script dependencies should be loaded before loading
@@ -76,8 +81,8 @@ require([
     'modules/Application',
     'modules/MobileApp',
     'modules/NonSupport',
+    "bowser",    
     "i18next",
-    "bowser",
     'bootstrap'
   ],
      function(
@@ -86,7 +91,6 @@ require([
         Application,
         MobileApp,
         NonSupport,
-        i18next,
         bowser) {
 
       domReady(function () {
@@ -94,13 +98,6 @@ require([
       $.getJSON("config/data.json", function(data) {
              
             console.log("config data", data);
-
-             i18next.init({
-                ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-                useLocalStorage: false,
-                fallbackLng: 'en-US',
-                debug: false
-            });
 
             //bowser // browser detection
 
@@ -125,6 +122,17 @@ require([
             } else if (categorizr.isTV) {
                 Application.start(options);
             }
+
+            i18n.init({
+                ns: { 
+                  namespaces: ['ns.common', 'ns.special'], 
+                  defaultNs: 'ns.special'
+                },
+                useLocalStorage: false,
+                debug: true
+            }, function(t){
+              $('body').i18n();
+            });            
       });
       
     });

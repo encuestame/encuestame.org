@@ -11,6 +11,7 @@ define(['marionette'],
           template: "#app-layout-template",
           regions: {
             menu: "#menu",
+            carrousel: "#carrousel",
             content: "#content",
             sub_content: "#sub-content",
             footer: "#footer"

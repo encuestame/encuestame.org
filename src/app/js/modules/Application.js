@@ -3,16 +3,20 @@
 'use strict';
 
 define([
+  'jquery',
   'marionette',
   'modules/model/Config',
   'modules/router/MainRoute',
   'modules/views/Menu',
+  'modules/views/Carrousel',
   'modules/Layout'],
   function(
+    $,
     marionette,
     Config,
     Route,
     Menu,
+    Carrousel,
     Layout){
   
   var DesktopApp = new Marionette.Application();
@@ -35,10 +39,25 @@ define([
       });
 
     var layout = new Layout();
+
+    // carrousel
+    var collection = new Backbone.Collection([
+      {name: "Tim", age: 5},
+      {name: "Ida", age: 26},
+      {name: "Rob", age: 55}
+    ]);
+
+    var carrousel = new Carrousel({
+      model: model,
+      collection: collection
+    });
+
+    // layouts 
     DesktopApp.regionMain.show(layout);
     layout.menu.show(new Menu({
       model : model
     }));
+    layout.carrousel.show(carrousel);
   };
 
   return DesktopApp;

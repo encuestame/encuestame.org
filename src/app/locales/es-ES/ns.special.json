@@ -1,11 +1,24 @@
 {
-    "app": {
-      "name": "i18n",
-      "insert": "you are __youAre__",
-      "child": "__count__ child",
-      "child_plural": "__count__ children",
-      "friend_context": "A friend",
-      "friend_context_male": "A boyfriend",
-      "friend_context_female": "A girlfriend"
+    "input": {
+      "placeholder" : "Search"
+    },
+    "btn": {
+    	"search": "Search"
+    },
+    "menu" : {
+    	"home" : "Inicio",
+    	"features" : "Características",
+    	"download" : "Descargas",
+    	"contributors" : "Colaboradores",
+    	"about" : "Sobre Nosotros",
+    	"more" : "Mas Recursos",
+    	"blog" : "Blog",
+    	"doc" : "Documentacion",
+    	"forum" : "Grupos Google",
+    	"builds" : "Buids",
+    	"issues" : "Reporta un Error",
+    	"clover" : "Estadisticas de Codigo",
+    	"javadoc" : "Javadoc",
+    	"chat" : "Habla con Nosotros"
     }
 }
