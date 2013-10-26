@@ -23,10 +23,12 @@
     <script src="js/vendor/modernizr/modernizr.js"></script>
 
 
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png"/>
@@ -78,7 +80,7 @@
 <!-- CARROUSEL -->
 <!-- CARROUSEL -->
 <!-- CARROUSEL -->
-
+<!-- 
 <div id="home" class="carousel slide section" style="background: #E7A441;">
   <div class="carousel-inner" style="box-shadow: 0px 0px 11px 0px rgb(94, 94, 94);">
     <div class="item active">
@@ -175,7 +177,7 @@
   </div>
   <a class="left carousel-control" href="#home" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#home" data-slide="next">&rsaquo;</a>
-</div>
+</div> -->
 
 <!-- CARROUSEL -->
 <!-- CARROUSEL -->
@@ -188,7 +190,7 @@
 <div class="container marketing features">
 
   <div class="row fea-resume">
-    <div class="span4">
+    <div class="col-lg-4">
       <img class="img-circle" src="img/social_network.png">
       <h2>
           Social Surveys
@@ -200,7 +202,7 @@
         <a class="btn main-link" href="#features">View details &raquo;</a>
       </p>
     </div>
-    <div class="span4">
+    <div class="col-lg-4">
       <img class="img-circle" src="img/08_settings.png">
       <h2>
           Quick Creation
@@ -212,7 +214,7 @@
         <a class="btn main-link" href="#features3">View details &raquo;</a>
       </p>
     </div>
-    <div class="span4">
+    <div class="col-lg-4">
       <img class="img-circle"  width="128" height="128" src="img/iphone_small.png">
       <h2>
           Mobile
@@ -578,14 +580,11 @@
 
   <script id="carrousel-template" type="text/template"> 
         <div id="carousel-example-generic" class="carousel slide">
-          <!-- Indicators -->
           <ol class="carousel-indicators"></ol>
 
-         <div class="carro-items">
+          <div class="carousel-inner"></div>
 
-         </div
 
-          <!-- Controls -->
           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span class="icon-prev"></span>
           </a>
@@ -596,13 +595,17 @@
   </script>
 
   <script id="carrousel-item" type="text/template"> 
-        <div class="item active">
-          <img src="image.png" alt="image">
-          <div class="carousel-caption">
-              <h3>item</h3>
-              <p>description</p>
+          <img src="<%= image %>" alt="<%= image %>">
+          <div class="container">
+              <div class="carousel-caption">
+                  <h3 data-i18n="<%= title %>">
+                    <%= title %>
+                   </h3>
+                   <p data-i18n="<%= sub_title %>">
+                      <%= sub_title %>
+                   </p>
+              </div>
           </div>
-        </div>
   </script>  
 
 

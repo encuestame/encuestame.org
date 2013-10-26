@@ -39,25 +39,24 @@ define([
       });
 
     var layout = new Layout();
-
-    // carrousel
-    var collection = new Backbone.Collection([
-      {name: "Tim", age: 5},
-      {name: "Ida", age: 26},
-      {name: "Rob", age: 55}
-    ]);
-
-    var carrousel = new Carrousel({
-      model: model,
-      collection: collection
-    });
-
     // layouts 
     DesktopApp.regionMain.show(layout);
     layout.menu.show(new Menu({
       model : model
-    }));
-    layout.carrousel.show(carrousel);
+    }));    
+
+    // carrousel
+    if (data.carrousel) {
+      var collection = new Backbone.Collection(data.carrousel.items);
+      var carrousel = new Carrousel({
+        model: model,
+        collection: collection
+      });
+      layout.carrousel.show(carrousel);
+    }
+
+
+    
   };
 
   return DesktopApp;

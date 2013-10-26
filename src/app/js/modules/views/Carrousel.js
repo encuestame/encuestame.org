@@ -15,7 +15,7 @@ define([
 
         itemView: CarrouselItem,
 
-        itemViewContainer: ".carro-items",
+        itemViewContainer: ".carousel-inner",
 
         itemViewOptions: {
           foo: "bar"
@@ -25,10 +25,25 @@ define([
          * 
          * @method 
          */
-        onBeforeRender : function() {
+        onBeforeRender: function () {
+
+        },
+
+        /**
+         * 
+         * @method 
+         */
+        onRender : function() {            
             var items = this.collection.length,
-            indicators_container = $('.carousel-indicators');
-            for (var i = 0; i < items.length; i++) {
+            data = this.model.get("carrousel"),
+            indicators_container = this.$el.find('.carousel-indicators');
+
+            if (data.background) {
+               this.$el.find('.carousel').css('backgroundColor', data.background);
+            }
+
+            // create items
+            for (var i = 0; i < items; i++) {
                 var _item = items[i],
                 node = $('<li/>')
                 .attr('data-target', '#carousel-example-generic')
@@ -36,6 +51,7 @@ define([
                 if (i === 0) {
                   node.addClass('active');
                 }
+                indicators_container.append(node);
             }
         }
 

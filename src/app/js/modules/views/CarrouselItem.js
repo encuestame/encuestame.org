@@ -8,9 +8,25 @@ define([
     function(Backbone, Marionette) {
     
     var CarroItem = Backbone.Marionette.ItemView.extend({
+
+          //
           tagName: "div",
-          className: "carousel-inner",
-          template: "#carrousel-item"
+
+          //
+          className: "item",
+
+          //
+          template: "#carrousel-item",
+
+          /**
+           * 
+           * @method 
+           */
+          onRender : function() {
+              if (this.model.get('activated')) {
+                 this.$el.addClass('active');
+              }
+          }
         });
 
     return CarroItem;

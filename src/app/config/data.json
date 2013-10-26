@@ -35,6 +35,42 @@
 		"url" : "http://encuestame.org/img/3d049dc5.logo_front.png"
 	},
 
+	"carrousel" : {
+		"background" : "#E7A441",
+		"items" : [
+			{
+				"title" : "c.social.title",
+				"activated" : true,
+				"sub_title" : "c.social.description",
+				"image" : "http://encuestame.org/img/3d049dc5.logo_front.png",
+				"button" :  {
+					"url" : "http://sourceforge.net/projects/encuestame/files/latest/download",
+					"label" : "c.download"
+				}
+			},
+			{
+				"title" : "c.open",
+				"activated" : false,
+				"sub_title" : "c.social.description",
+				"image" : "http://encuestame.org/img/dcfa43b5.github-enme.png",
+				"button" :  {
+					"url" : "http://sourceforge.net/projects/encuestame/files/latest/download",
+					"label" : "c.download"
+				}
+			},
+			{
+				"title" : "c.demo",
+				"activated" : false,
+				"sub_title" : "c.social.description",
+				"image" : "http://encuestame.org/img/9282335f.front_demo.png",
+				"button" :  {
+					"url" : "http://sourceforge.net/projects/encuestame/files/latest/download",
+					"label" : "c.download"
+				}
+			}			
+		]
+	},
+
 	"footer" : {
 		"twitter" : true,
 		"github" : true,
