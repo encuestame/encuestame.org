@@ -1,0 +1,45 @@
+{
+	"release" : {
+		"version" : "1.147-M2",
+		"download" : "http://sourceforge.net/projects/encuestame/files/latest/download",
+		"source" : "https://github.com/encuestame/encuestame/archive/encuestame-1.146.zip"
+	},
+
+	"info" : {
+		"github" : "https://github.com/encuestame/",
+		"sourceforge" : "http://sourceforge.net/projects/encuestame/files/encuestame_beta/",
+		"build" : "http://www.encuestame.org/wiki/display/DOC/How+to+build+Encuestame",
+		"install" : "http://www.encuestame.org/wiki/display/DOC/Installing+Encuestame",
+		"expand_nav" : {
+			"blog" : "http://blog.encuestame.org/",
+			"doc" : "http://www.encuestame.org/wiki",
+			"forum" : "https://groups.google.com/forum/?fromgroups&hl=es#!forum/encuestame",
+			"builds" : "http://www.encuestame.org/build",
+			"issues" : "http://www.encuestame.org/issues",
+			"clover" : "http://www.encuestame.org/clover",
+			"javadoc" : "http://www.encuestame.org/javadoc",
+			"chat" : "https://www.hipchat.com/gPU0o80Av"
+		},
+		"search" : "http://encuestame.org/wiki/dosearchsite.action?queryString="
+	},
+
+	"menu" : [
+		{ "label" : "home", "url" : "#home"},
+		{ "label" : "features", "url" : "#features"},
+		{ "label" : "download", "url" : "#download"},
+		{ "label" : "contributors", "url" : "#contributors"},
+		{ "label" : "about", "url" : "#about"}
+	],
+
+	"logo" : {
+		"url" : "http://encuestame.org/img/3d049dc5.logo_front.png"
+	},
+
+	"footer" : {
+		"twitter" : true,
+		"github" : true,
+		"facebook" : true,
+		"plus" : true
+	}
+
+}

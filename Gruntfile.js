@@ -15,6 +15,7 @@ module.exports = function(grunt) {
   // Grunt project configuration
 
   grunt.initConfig({
+    
     pkg: '<json:package.json>',
 
     dirs: {
@@ -30,6 +31,7 @@ module.exports = function(grunt) {
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+       
 
     // Task configuration
 
@@ -158,13 +160,14 @@ module.exports = function(grunt) {
 
           logLevel: 2,
 
-          //name: "vendor/almond/almond",
-
           include: ['modules/EnMeApp'],
 
           mainConfigFile: "<%= dirs.staging %>/step1/js/main.js",
 
-          wrap: true
+           wrap: {
+            start: '<%= banner.full %>' + "\n;(function(window, document, undefined){",
+            end: "})(this, document);"
+          }
         },
 
         dev: {
@@ -236,7 +239,9 @@ module.exports = function(grunt) {
           jshintrc: './.jshintrc'
         },
         gruntfile: ['Gruntfile.js'],
-        js: ['<%= dirs.root %>/js/**/*.js', '!<%= dirs.root %>/js/vendor/**/*.js'],
+        js: ['<%= dirs.root %>/js/**/*.js', 
+            '!<%= dirs.root %>/js/vendor/**/*.js',
+            '!<%= dirs.root %>/js/lib/**/*.js'],
         'test-unit': ['<%= dirs.test %>/unit/**/*.js'],
         dev: {
           src: [ '<%= jshint.gruntfile %>',

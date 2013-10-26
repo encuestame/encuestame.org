@@ -4,6 +4,7 @@
       , "$": true
       , "modulejs": true
       , "Modernizr" : true
+      , "categorizr" : true      
       , "Handlebars" : true
       , "" : true
       , "Backbone" : true

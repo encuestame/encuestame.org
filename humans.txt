@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Juan Carlos Picado -- Team Lead-- @jotadeveloper
+    Paola Morales -- Backend Developer-- @dianmora
+
+# THANKS
+
+    Atlassian Open Source Project (Free Licences)
+    WebStorm (Free Licences)
+    Friends (All)
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

@@ -1,10 +1,5 @@
 node_modules/
 temp/
 .DS_Store
-src/app/js/vendor/jquery/
-src/app/js/vendor/modernizr/
-src/app/js/vendor/requirejs/
-src/app/js/vendor/requirejs-domready/
-src/app/js/vendor/requirejs-i18n/
-src/app/js/vendor/underscore/
+src/app/js/vendor/*
 .sass-cache

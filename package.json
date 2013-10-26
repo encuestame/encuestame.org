@@ -1,6 +1,6 @@
 {
-  "name": "marionette-js-boilerplate",
-  "version": "0.1.0",
+  "name": "encuestame-site",
+  "version": "0.3.0",
   "devDependencies": {
     "grunt": "0.4.1",
     "grunt-contrib-jshint": "~0.1.1",

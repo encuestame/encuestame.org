@@ -10,11 +10,19 @@ require.config({
 
     jquery : "vendor/jquery/jquery",
 
+    i18next : "vendor/i18next/release/i18next.amd-1.5.7",
+
     underscore : "vendor/underscore/underscore",
 
     domReady : "vendor/requirejs-domready/domReady",
 
-    bootstrap : "vendor/bootstrap/bootstrap"
+    bootstrap : "vendor/bootstrap/dist/js/bootstrap",
+
+    backbone : "vendor/backbone/backbone",
+
+    bowser : "vendor/bowser/bowser",
+
+    marionette : "vendor/marionette/lib/backbone.marionette"
   },
 
   // requirejs shim configuration
@@ -25,7 +33,32 @@ require.config({
       exports: "jQuery"
     },
 
-    bootstrap: ["jquery"],
+    bootstrap: {
+        //These script dependencies should be loaded before loading
+        //backbone.js
+        deps: ['jquery'],
+        //Once loaded, use the global 'Backbone' as the
+        //module value.
+        exports: 'jQuery'
+    },
+
+    backbone: {
+        //These script dependencies should be loaded before loading
+        //backbone.js
+        deps: ['underscore', 'jquery'],
+        //Once loaded, use the global 'Backbone' as the
+        //module value.
+        exports: 'Backbone'
+    },
+
+    marionette: {
+        //These script dependencies should be loaded before loading
+        //backbone.js
+        deps: ['jquery', 'underscore', 'backbone'],
+        //Once loaded, use the global 'Backbone' as the
+        //module value.
+        exports: 'Marionette'
+    },      
 
     underscore: {
       exports: "_"
@@ -35,29 +68,83 @@ require.config({
 
 });
 
+//
 
 require([
     'jquery',
-    'underscore',
     'domReady',
-    'modules/EnMeApp',
+    'modules/Application',
+    'modules/MobileApp',
+    'modules/NonSupport',
+    "i18next",
+    "bowser",
     'bootstrap'
   ],
      function(
         $,
-        _,
         domReady,
-        EnMeApp) {
+        Application,
+        MobileApp,
+        NonSupport,
+        i18next,
+        bowser) {
 
       domReady(function () {
-          // determine positions
-          EnMeApp.determine_positions();
-          // trigger the scrill
-          $(this).trigger('scroll');
-          // enable auto scroll top on devices
-          EnMeApp.enableTouchMode();
-          // add events for each top menu
-          EnMeApp.addMenuScrollDown();
-        });
+
+      $.getJSON("config/data.json", function(data) {
+             
+            console.log("config data", data);
+
+             i18next.init({
+                ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+                useLocalStorage: false,
+                fallbackLng: 'en-US',
+                debug: false
+            });
+
+            //bowser // browser detection
+
+            var options = data;
+
+            if (bowser.webkit && bowser.firefox) {
+
+            } else if (bowser.msie && bowser.version <= 6) {
+
+            } else if (bowser.msie && bowser.version === 8) {
+
+            } else if (bowser.msie && bowser.version > 8) {
+
+            }
+
+            if (categorizr.isDesktop) {
+                Application.start(options);
+            } else if (categorizr.isMobile) {
+                MobileApp.start(options);
+            } else if (categorizr.isTablet) {
+                MobileApp.start(options);
+            } else if (categorizr.isTV) {
+                Application.start(options);
+            }
+      });
+      
+    });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
