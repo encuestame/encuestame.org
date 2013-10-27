@@ -13,6 +13,7 @@ define(['marionette'],
             menu: "#menu",
             carrousel: "#carrousel",
             content: "#content",
+            features: "#features",
             sub_content: "#sub-content",
             footer: "#footer"
           }

@@ -9,6 +9,7 @@ define([
   'modules/router/MainRoute',
   'modules/views/Menu',
   'modules/views/Carrousel',
+  'modules/views/Features',
   'modules/Layout'],
   function(
     $,
@@ -17,6 +18,7 @@ define([
     Route,
     Menu,
     Carrousel,
+    Features,
     Layout){
   
   var DesktopApp = new Marionette.Application();
@@ -53,6 +55,17 @@ define([
         collection: collection
       });
       layout.carrousel.show(carrousel);
+    }
+
+    // features
+
+    if (data.features) {
+      var collection_fe = new Backbone.Collection(data.features.items);
+      var features = new Features({
+        model: model,
+        collection: collection_fe
+      });
+      layout.features.show(features); 
     }
 
 

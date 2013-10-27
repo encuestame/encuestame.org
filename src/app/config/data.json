@@ -35,6 +35,60 @@
 		"url" : "http://encuestame.org/img/3d049dc5.logo_front.png"
 	},
 
+	"features" : {
+		"config" : {},
+		"items" : [
+			{
+				"image" : "http://localhost:3001/img/social_network.png",
+				"title" : "f.social",
+				"sub_title" : "f.social_desc",
+				"width" : "128",
+				"height" : "128",
+				"url" : "#features"
+			},
+			{
+				"image" : "http://localhost:3001/img/08_settings.png",
+				"title" : "f.creation",
+				"width" : "128",
+				"height" : "128",
+				"sub_title" : "f.creation_desc",
+				"url" : "#features3"
+			},
+			{
+				"image" : "http://localhost:3001/img/iphone_small.png",
+				"title" : "f.mobile",
+				"width" : "128",
+				"height" : "128",
+				"sub_title" : "f.mobile_desc",
+				"url" : "#features2"
+			}
+		],
+		"details" : 
+			[
+				{
+					"image" : "http://localhost:3001/img/mac-enme2.png",
+					"title" : "f2.create",
+					"width" : "128",
+					"height" : "128",
+					"sub_title" : "f2.create_desc"
+				},
+				{
+					"image" : "http://localhost:3001/img/mobile_iphone_enne.png",
+					"title" : "f2.mobile",
+					"width" : "128",
+					"height" : "128",
+					"sub_title" : "f2.mobile_desc"
+				},
+				{
+					"image" : "http://localhost:3001/img/page1.png",
+					"title" : "f.survey",
+					"width" : "128",
+					"height" : "128",
+					"sub_title" : "f.survey_desc"
+				}
+			]		
+	},
+
 	"carrousel" : {
 		"background" : "#E7A441",
 		"items" : [
