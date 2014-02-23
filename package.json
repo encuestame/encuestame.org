@@ -24,5 +24,12 @@
     "grunt-regarde": "~0.1.1",
     "grunt-usemin": "~0.1.11",
     "grunt-contrib-requirejs": "~0.4.0"
-  }
+  },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/juanpicado/encuestame-site.git"
+	},
+	"bugs": "https://www.encuestame.org/issues",
+	"keywords": [ "survey", "social", "network" ],
+	"homepage": "http://www.encuestame.org/"
 }
