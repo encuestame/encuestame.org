@@ -8,7 +8,7 @@ require.config({
 
   paths: {
 
-    jquery : "vendor/jquery/src/jquery",
+    jquery : "vendor/jquery/jquery",
 
     i18next : "vendor/i18next/release/i18next-1.7.1",
 
