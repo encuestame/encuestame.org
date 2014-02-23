@@ -29,6 +29,9 @@
 		"type": "git",
 		"url": "https://github.com/juanpicado/encuestame-site.git"
 	},
+	"scripts": {
+		"install": "bower install"
+	}
 	"bugs": "https://www.encuestame.org/issues",
 	"keywords": [ "survey", "social", "network" ],
 	"homepage": "http://www.encuestame.org/"
