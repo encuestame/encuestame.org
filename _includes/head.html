@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{% t pages.head_description %}">
+<meta name="keywords" content="{% t pages.keywords %}">
+<meta name="author" content="Juan Picado @jotadeveloper, Paola Morales @dianmora and Encuestame contributors">
+
+<title>
+    {% if page.title == "Encuestame" %}
+    {{ page.title }}
+    {% else %}
+    {{ page.title }} &middot; Encuestame
+    {% endif %}
+</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/enme.css">
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="../assets/ico/favicon.ico">

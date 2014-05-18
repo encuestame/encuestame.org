@@ -1,0 +1,211 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+
+@mixin ctb-gradient-vertical($startColor: #555, $endColor: #333, $percent: 62%) {
+  background-color: mix($startColor, $endColor, $percent);
+  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor $percent); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient(top, $startColor $percent, $endColor); // Opera 11.10
+  background-image: linear-gradient(to bottom, $startColor $percent, $endColor $percent); // Standard, IE10
+  background-repeat: repeat-x;
+}
+
+
+body {
+  font : 300 14px/1.5 "Open Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+iframe {
+  border: none;
+}
+
+.enme-doc-navbar {
+  margin-bottom: 0px;
+  @include border-radius(0xp);
+}
+
+.logo {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.orange-bk {
+  background-color: #E7A441;
+  @include ctb-gradient-vertical(#E7A441, #e7d553, 100%);
+}
+
+
+.site-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  .docs-subtitle {
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 60px;
+      max-width: 750px;
+      margin: 0 auto 30px;
+    //  color: #FFF;
+//    line-height: 38px;
+  }
+}
+
+.main-module {
+  margin: 0px;
+  width: 100%;
+  padding: 45px 150px;
+  text-align: center;
+
+  img {
+    margin: 0;
+    display: initial;
+  }
+
+  > h1 {
+    color: #FFF;
+    margin: 0 0 35px  0;
+  }
+
+  .col-sm-4 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.enme-footer {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+   ul {
+      li {
+        display: inline;
+        list-style: none;
+      }
+   }
+}
+
+.enme-article-body {
+  h2,h1,h3,h4,h5 {
+    font-weight: 300;
+    color: #222;
+  }
+  p {
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    color: #555;
+  }
+}
+
+.enme-sub-content-header {
+  padding: 20px 40px;
+  margin-bottom: 15px;
+  color: #FFF;
+  .page-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  h2,h1,h3,h4,h5 {
+    font-weight: 300;
+  }
+  .page-description {
+    color: #FFF;
+    font-size: 24px;
+    opacity: .7;
+  }
+  .page-description {
+     margin-top: 0;
+     margin-bottom: 0;
+     font-weight: 300;
+  }
+  p {
+
+  }
+}
+
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd
+}
+
+.list-group .team-member {
+  font-size: 14px;
+  line-height: 32px;
+  color: #555
+}
+
+.list-group img {
+  float: left;
+  width: 32px;
+  margin-right: 10px;
+  border-radius: 4px
+}
+
+.list-group .team-member-info {
+  overflow: hidden
+}
+
+.list-group .github-btn {
+  float: right;
+  width: 121px;
+  height: 20px;
+  margin-top: 6px
+}
+
+.docs-module {
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px
+}
+
+.docs-module .btn-block {
+  margin-bottom: 0
+}
+
+.version {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 90%;
+  color: #777
+}
+
+.docs-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd
+}
+
+.docs-section:last-child {
+  border-bottom: 0
+}
+
+
+#features {
+  .carousel-caption {
+      background-color: black;
+      @include opacity(0.5);
+      @include border-radius(10px);
+  }
+}

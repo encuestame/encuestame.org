@@ -1,0 +1,71 @@
+<div class="enme-footer">
+    <!-- Social links -->
+    <ul class="social">
+        <li>
+            <iframe class="github-btn"
+                    src="http://ghbtns.com/github-btn.html?user=encuestame&amp;repo=encuestame&amp;type=watch&amp;count=true" width="100" height="20"></iframe>
+        </li>
+        <li>
+            <a  href="https://twitter.com/share" class="twitter-share-button"
+               data-url="{{site.site_domain_url}}"
+               data-text="{% t global.tweet_message %}" data-via="Encuestame">
+                {% t global.tweet %}
+            </a>
+        </li>
+        <li><a  href="https://twitter.com/encuestame" class="twitter-follow-button" data-show-count="true">
+            {% t global.follow %} @encuestame</a>
+        </li>
+    </ul>
+
+    <p class="enme-footer-text">
+        {% t pages.footer_text_step_1 %}
+        <a href="{{site.license_url}}" target="_blank">
+            Apache License
+        </a>
+        {% t pages.footer_text_step_2 %}
+        <a href="{{site.license_site}}" target="_blank">
+            CC BY 3.0
+        </a>.
+        <br/>
+        {% t pages.footer_text_step_3 %}
+        <a href="{{ site.jota_twitter }}" target="_blank">
+            Juan Picado (@jotadeveloper)
+        </a>
+        &&
+        <a href="{{site.dianmora_twitter}}" target="_blank">
+            Paola Morales (@dianmora)
+        </a>
+            .
+        </p>
+
+    <ul class="enme-footer-links">
+        <li>
+            {% t global.currently %} v{{ site.current_version }}
+        </li>
+        <li>&middot;</li>
+        <li><a href="{{ site.issues }}" target="_blank">
+            {% t global.issues %}
+        </a></li>
+        <li>&middot;</li>
+        <li>
+            <a href="{{ site.releases }}" target="_blank" >
+                {% t global.releases %}
+            </a>
+        </li>
+    </ul>
+</div>
+
+{% comment %}
+Inject Twitter widgets asynchronously. Snippet snipped from Twitter's
+JS interface site: https://dev.twitter.com/enme/tfw-javascript
+
+* "js.async=1;" added to add async attribute to the generated script tag.
+{% endcomment %}
+<script>
+    window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+        js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+</script>

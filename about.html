@@ -1,0 +1,121 @@
+---
+layout: default
+title: About
+lang: en
+---
+
+
+<div class="docs-sub-header">
+    {% include header.html %}
+
+    <div class="enme-sub-content-header orange-bk">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="page-title">
+                        {% t ab.main_title %}
+                    </h2>
+                    <p class="page-description">
+                        {% t ab.subtitle %}
+                    </p>
+                </div>
+                {% include sub_header.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="docs-section">
+                <h2>
+                    {% t ab.history_title %}
+                </h2>
+                <p>
+                    {% t ab.history_1 %}
+                    <a href="{{site.jota_twitter}}">@jotadeveloper</a> and
+                    <a href="{{site.dianmora_twitter}}">@dianmora</a> since mid-2008.
+                    {% t ab.history_2 %}
+                </p>
+                <p>
+                    {% t ab.history_3 %}
+                </p>
+                <p>
+                    {% t ab.history_4 %}
+                </p>
+            </div>
+            <div class="column-group">
+                <div class="column lg-units-8 docs-content">
+
+                    <div class="docs-section">
+                        <h2>
+                            {% t ab.team %}
+                        </h2>
+                        <p class="lead">
+                            {% t ab.tm_lead %}
+                        </p>
+
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <iframe class="github-btn"
+                                        src="http://ghbtns.com/github-btn.html?user=juanpicado&amp;type=follow">
+
+                                </iframe>
+                                <a class="team-member" href="{{page.contri.juanpicado_github}}">
+                                    <img src="http://www.gravatar.com/avatar/c676605ff39f9c7a43f5518a8ce54e12?s=230"
+                                         alt="@jotadeveloper">
+                                    <div class="team-member-info">
+                                        <strong>Juan Picado</strong>
+                                        <a href="{{site.jota_twitter}}" target="_blank">
+                                            @jotadeveloper
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <iframe class="github-btn"
+                                        src="http://ghbtns.com/github-btn.html?user=dianmorales&amp;type=follow"></iframe>
+                                <a class="team-member" href="{{page.contri.dianmorales_github}}">
+                                    <img src="http://www.gravatar.com/avatar/172ee6b7fe9935425f680f338888299f?s=230" alt="@connor">
+                                    <div class="team-member-info">
+                                        <strong>
+                                            Diana Morales
+                                        </strong>
+                                            <a href="{{site.dianmora_twitter}}" target="_blank">
+                                                @dianmorales
+                                            </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>
+                            {% t ab.tm_involved_1 %}
+                            <a href="{{site.issues}}">
+                                {% t ab.tm_involved_2 %}
+                            </a>
+                            {% t ab.tm_involved_3 %}
+                            <a href="{{site.commit}}">
+                                {% t ab.tm_involved_4 %}
+                            </a>
+                            {% t ab.tm_involved_5 %}
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            {% include aside.html %}
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        {% include footer.html %}
+    </div>
+</div>

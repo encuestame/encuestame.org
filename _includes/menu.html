@@ -1,0 +1,55 @@
+<div class="navbar-header">
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">
+            Toggle navigation
+        </span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a href="../" class="navbar-brand">
+        Encuestame
+    </a>
+</div>
+<nav class="collapse navbar-collapse bs-navbar-collapse">
+
+    <ul class="nav navbar-nav">
+        <li>
+            <a class="docs-nav-item" href="/{{ site.lang }}/getting-started.html" >
+                {% t pages.menu_getting_started %}
+            </a>
+        </li>
+        <li class="active">
+            <a class="docs-nav-item" href="/{{ site.lang }}/features.html" >
+                {% t pages.menu_features %}
+            </a>
+        </li>
+        <li>
+            <a class="docs-nav-item" href="/{{ site.lang }}/mobile.html" >
+                {% t pages.menu_mobile %}
+            </a>
+        </li>
+        <li>
+            <a class="docs-nav-item" href="/{{ site.lang }}/about.html" >
+                {% t pages.menu_about %}
+            </a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="docs-nav-item" target="_blank" href="{{site.repo}}" >
+                {% t pages.menu_github %}
+            </a>
+        </li>
+        <li>
+            <a class="docs-nav-item" href="{{site.feedback}}" target="_blank">
+                {% t pages.feedback %}
+            </a>
+        </li>
+        <li>
+            <a class="docs-nav-item" href="/{{ site.lang }}/contact.html" >
+                {% t pages.menu_contact %}
+            </a>
+        </li>
+    </ul>
+</nav>

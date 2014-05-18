@@ -1,0 +1,122 @@
+global:
+  italian: Italian
+  english: English
+  spanish: Español
+  english: English
+  german: German
+  about: About
+  twitter: Twitter
+  github: GitHub
+  download: Download
+  currently: Currently
+  issues: Issues
+  releases: Releases
+  follow: Follow
+  tweet: Tweet
+  source_code: Source Code
+  tweet_message: Encuestame &#8211; Build Survey, Recolect Data. (EN)
+pages:
+ title: Build and Manage your social network surveys in a single place.
+ title_steps: Encuestame in 3 steps
+ steps_title_1: Social Connectors
+ feedback: Feedback
+ steps_title_2: Create a Survey
+ steps_title_3: Publish && Share
+ steps_title_desc_1: The most popular Social Networks are available in Encuestame,connect it all accounts you want to publish, without restrictions
+ steps_title_desc_2: Several type of survey are available in Encuestame,
+ steps_title_desc_3: 
+ open_source_title: Encuestame is open source. It's hosted, developed, and maintained on GitHub.
+ open_source_title_btn: View the GitHub project
+ footer_text_step_1: Code licensed under the
+ footer_text_step_2: and this site are licensed under
+ footer_text_step_3: Encuestame has been created by
+ head_description: bla bla bla
+ keywords: survey, social network
+ menu_getting_started: Getting started
+ menu_features: Features
+ menu_mobile: Mobile
+ menu_contact: Contact
+ menu_github: GitHub project
+ menu_about: About
+ getting_started_subtitle: Here the first steps with Encuestame
+ menu_features: Features
+ menu_features_subtitle: Enjoy a collection screenshot of all features
+ menu_mobile: Encuestame Mobile
+ menu_mobile_subtitle: mobile feature
+ aside_title_1:  Compiled version, ready to deploy in your web container.
+ aside_title_2:  If you haven't already, download the source code for
+
+mo:
+  content_title: Mobile Accessibility
+  content_descri: Navigate in your mobile devices is very straightforward
+  option_feature: Features
+  option_1: Mobile Votes
+  option_2: Results Navigation
+  option_3: Comments
+  option_4: Interactive Charts
+  option_5: Profile Resume
+  option_6: Future Android and iOS Support
+
+gtt:
+  installation_title: Installation
+  installation_subtitle: Subtitle Installation
+  ins_option_1_title: Step 1. Web Container
+  ins_option_2_title: Step 2. Wizard Installation
+  ins_option_1_desc: The installation is quite straightforward, just follow the next steps
+  inst_option_1_1: If you are a Java ninja you can build your own deploy from the source code,
+  inst_option_1_1_link: follow  this guidelines.
+  inst_option_1_2: or download the last release
+  inst_option_1_2_link: from our Mirrow.
+  inst_option_2_1:  Once you have the build file,
+  inst_option_2_1_link: you can customize the Installation.
+  inst_option_2_2: We love automatize stuff,
+  inst_option_2_2_link: just follow this guide
+  installation_title: Installation
+  how_title: How to Use Encuestame
+  how_subtitle: Here some shortcuts to give you a brief introduction how to use Encuestame
+  how_option1: Linking Social Networks
+  how_option2: Create your first Tweetpoll
+  how_option3: Create your first Poll
+  how_option4: Embebed a Widget
+  getin_title: Get in Touch
+  getin_subtitle:  We are waiting for your feedback, comments, questions or suggestions, there are  different ways to reach us, don't be shy !
+  getin_op1_word1: Read our
+  getin_op1_word2: Blog
+  getin_op2_word1: For help using Encuestame, ask on our
+  getin_op2_word2: Google Group
+  getin_op2_word3: o our
+  getin_op2_word4: Developer mail list.
+  getin_op3_word1: See our videos in our
+  getin_op3_word2: Youtube Channel
+  getin_op4_word1: Also is posible post a comment in our
+  getin_op4_word2: Wiki
+ab:
+  main_title: About
+  subtitle: All you want to know about the project
+  history_title: History
+  history_1: Encuestame has been developed by
+  history_2: From de beginning it was a personal project based in old PHP project and after some redesign it was converted in Java project. After try different technologies we bet for Dojo Toolkit and Spring Framework as main framework to build the project.
+  history_3: Along the last years we have been adding new features, being able to connect Encuestame with the most famous  Social Networks, trying to give you a project easy to be installed, to be usable and to be easy manageable. In mid-2011 we  release the first version of Encuestame, since then we managed to make usable Encuestame in the new mobile world.
+  history_4:  Also we've enjoyed the support of companies like Atlassian and Jetbrains that have offered pen source licenses to our team. The history doesn't finish here, it will have more features coming soon.
+  team: Team
+  tm_lead: Encuestame is maintained by one of its creators and a couple of contributors.
+  tm_involved_1: Get involved with Encuestame development by
+  tm_involved_2: opening an issue
+  tm_involved_3: or submitting a pull request. Read our
+  tm_involved_4: contributing guidelines
+  tm_involved_5:  for information on how we develop.
+fe:
+  slide_1:  Control Manage System
+  slide_d_1: Organize, search, filter and edit Surveys
+  slide_2: Scheduled Events
+  slide_d_2:  Twitter is down? No problem, program your survey to be sended later.
+  slide_3:  Embebed Survey
+  slide_d_3:  Is possible embebed content in blogs or websites.
+  slide_4:  Content Filtering
+  slide_d_4: The best way to search the required content
+  slide_5: Notification Center
+  slide_d_5: Have you missed  some event? No problem.
+  slide_6: Social Network Connect
+  slide_d_6:  We support the most famous social network, log in, publish and share content is possible.
+  slide_7:  Survey Viewer
+  slide_d_7: Share easily your records with your public

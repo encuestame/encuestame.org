@@ -1,0 +1,62 @@
+name: Encuestame Social Networl Survey Tool
+markdown: redcarpet
+pygments: true
+
+languages: ["en", "en", "es", "de"]
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+
+# Server
+#destination:      _gh_pages
+#host:             0.0.0.0
+#port:             9001
+#baseurl:          /
+url:              http://www.encuestame.org
+#encoding:         UTF-8
+
+exclude:
+  - sass
+  - config.rb
+  - Gemfile
+
+# Custom vars
+current_version:  1.1.47
+repo:             https://github.com/encuestame
+project_name:     Encuestame
+download:
+  source:         https://github.com/encuestame/encuestame/archive/1.147v091214.zip
+  dist:           https://sourceforge.net/projects/encuestame/files/latest/download
+
+site_domain_url:      http://www.encuestame.org
+blog:             http://www.encuestame.org/blog
+wiki:             http://www.encuestame.org/wiki
+feedback:         https://encuestame.uservoice.com
+issues:           http://www.encuestame.org/issues
+code:             http://www.encuestame.org/code
+commit:           http://encuestame.org/wiki/display/DEVELOPMENT/Commiters+Guidelines
+maillist:         http://lists.encuestame.org/cgi-bin/mailman/listinfo
+google_groups:    https://groups.google.com/forum/?hl=es#!forum/encuestame
+build:             http://www.encuestame.org/build
+releases:         http://www.encuestame.org/issues/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aversions-panel
+jota_twitter:      http://www.twitter.com/jotadeveloper
+dianmora_twitter:      http://www.twitter.com/dianmora
+youtube_channel:   http://www.youtube.com/channel/UCXCTTWRQXfArc_8J7O2P6Yg
+license_url:       https://raw.github.com/encuestame/encuestame/master/LICENSE.txt
+license_site:     https://raw.github.com/encuestame/encuestame/master/LICENSE.txt
+
+getting:
+   web1: http://encuestame.org/wiki/display/DOC/How+to+build+Encuestame
+   web2: http://encuestame.org/wiki/display/DOC/Download+Encuestame
+   wizard1: http://encuestame.org/wiki/display/DOC/How+to+build+Encuestame
+   wizard2: http://encuestame.org/wiki/display/DOC/Wizard+Installation
+   how1: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation
+   how2: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation
+   how3: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation
+   how4: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation
+
+contri:
+    juanpicado_github: https://github.com/juanpicado
+    dianmorales_github: https://github.com/dianmorales
