@@ -7,8 +7,10 @@ global:
   about: About
   twitter: Twitter
   github: GitHub
+  wiki: Wiki
   download: Download
   currently: Currently
+  inprogres: Under development
   issues: Issues
   releases: Releases
   follow: Follow
@@ -22,15 +24,15 @@ pages:
  feedback: Feedback
  steps_title_2: Create a Survey
  steps_title_3: Publish && Share
- steps_title_desc_1: The most popular Social Networks are available in Encuestame.
- steps_title_desc_2: Several type of survey are available in Encuestame,
- steps_title_desc_3: Test Text
+ steps_title_desc_1: Connect with the most popular social networks
+ steps_title_desc_2: Easy creation of multiple kind of surveys
+ steps_title_desc_3: Share your survey in multiple social networks
  open_source_title: Encuestame is open source. It's hosted, developed, and maintained on GitHub.
  open_source_title_btn: View the GitHub project
  footer_text_step_1: Code licensed under the
  footer_text_step_2: and this site are licensed under
  footer_text_step_3: Encuestame has been created by
- head_description: bla bla bla
+ head_description: Encuestame is an open source CMS to make several type of surveys, based on massive distribution on social network, email, web and mobile versions, geolocation features, syndication, graphs, beautiful email templates and a modern user interface.
  keywords: survey, social network
  menu_getting_started: Getting started
  menu_features: Features
@@ -41,7 +43,7 @@ pages:
  getting_started_subtitle: Here the first steps with Encuestame
  menu_features: Features
  menu_features_subtitle: Enjoy a collection screenshot of all features
- menu_mobile: Encuestame Mobile
+ menu_mobile: Mobile
  menu_mobile_subtitle: mobile feature
  aside_title_1:  Compiled version, ready to deploy in your web container.
  aside_title_2:  If you haven't already, download the source code for

@@ -6,9 +6,11 @@ global:
   german: German
   about: About
   twitter: Twitter
+  wiki: Wiki
   github: GitHub
   download: Download
   currently: Currently
+  inprogres: Under development
   issues: Issues
   releases: Releases
   follow: Follow

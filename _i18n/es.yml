@@ -6,11 +6,13 @@ global:
   about: Sobre
   twitter: Twitter
   github: GitHub
+  wiki: Wiki
   download: Descarga
   about: Sobre nosotros
   currently: Actual
-  issues: Problemas
-  releases: Lanzamientos
+  inprogres: en desarrollo
+  issues: Reporta un Error
+  releases: Versiones
   source_code: Código Fuente
   follow: Seguir
   tweet: Tweet

@@ -23,7 +23,8 @@ exclude:
   - Gemfile
 
 # Custom vars
-current_version:  1.5.0
+current_version:  1.147
+in_progress    :  1.5.0
 repo:             https://github.com/encuestame
 project_name:     Encuestame
 download:
@@ -45,7 +46,7 @@ jota_twitter:      http://www.twitter.com/jotadeveloper
 dianmora_twitter:      http://www.twitter.com/dianmora
 youtube_channel:   http://www.youtube.com/channel/UCXCTTWRQXfArc_8J7O2P6Yg
 license_url:       https://raw.github.com/encuestame/encuestame/master/LICENSE.txt
-license_site:     https://raw.github.com/encuestame/encuestame/master/LICENSE.txt
+license_site:     https://creativecommons.org/licenses/by/3.0/
 
 getting:
    web1: http://encuestame.org/wiki/display/DOC/How+to+build+Encuestame
