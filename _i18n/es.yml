@@ -22,34 +22,34 @@ pages:
   feedback: Sugerencias
   steps_title_2: Crea una Encuesta
   steps_title_3: Publica y Comparte
-  steps_title_desc_1: Las redes sociales más populares están disponibles en Encuestame, conécta todas las cuentas que desea publicar, sin restricciones.
-  steps_title_desc_2: Diferentes tipos de encuestas estan disponibles en Encuestame,
-  steps_title_desc_3:  
+  steps_title_desc_1: Conecta con las redes sociales mas populares
+  steps_title_desc_2: Facil creación de diferentes tipos de encuestas
+  steps_title_desc_3: Comparte tu encuesta en multiples redes sociales
   open_source_title: Encuestame es un proyecto de código libre. Esta alojado, desarrollado, y mantenido en GitHub.
   open_source_title_btn: Visita el proyecto en Github
   footer_text_step_1: Código bajo licencia de
   footer_text_step_2: y este sitio esta bajo licencia
   footer_text_step_3: Encuestame ha sido creado por
-  head_description: Encuestame es un proyecto de código libre
+  head_description: Encuestame is an open source CMS to make several type of surveys, based on massive distribution on social network, email, web and mobile versions, geolocation features, syndication, graphs, beautiful email templates and a modern user interface. 
   keywords: encuestas, redes sociales
   menu_getting_started: Primeros pasos
-  menu_features: Característica
+  menu_features: Funcionalidades
   menu_mobile: Movil
   menu_contact: Contacto
   menu_github: Proyecto GitHub
   menu_about: Sobre Nosotros
   getting_started_subtitle: Aquí los primeros pasos con Encuestame
-  menu_features: Características
-  menu_features_subtitle: Disfrunta de una coleción de imagenes de todas nuestras características
-  menu_mobile: Encuestame Movil
+  menu_features: Funcionalidades
+  menu_features_subtitle: Disfrunta de una coleción de imagenes de todas nuestras funcionalidades
+  menu_mobile: Movil
   menu_mobile_subtitle: Disfruta de la version web movil 
   aside_title_1:  Versión lista para su uso en su contenedor web.
-  aside_title_2: Si aún no la tienes, descarga el código fuente de
+  aside_title_2: Descarga el código fuente de
 
 mo:
   content_title: Accesibilidad Movil
   content_descri: Navegar en Encuestame en un dispositivol movil es muy sencillo
-  option_feature: Características
+  option_feature: Funcionalidades
   option_1: Votar desde un Movil
   option_2: Navega en los resulados
   option_3: Comentar
@@ -60,64 +60,64 @@ mo:
 
 gtt:
   installation_title: Instalación
-  installation_subtitle: Subtitle Installation
-  ins_option_1_title: Step 1. Web Container
-  ins_option_2_title: Step 2. Wizard Installation
-  ins_option_1_desc: The installation is quite straightforward, just follow the next steps
-  inst_option_1_1: If you are a Java ninja you can build your own deploy from the source code,
-  inst_option_1_1_link: follow  this guidelines.
-  inst_option_1_2: or download the last release
-  inst_option_1_2_link: from our Mirrow.
-  inst_option_2_1:  Once you have the build file,
-  inst_option_2_1_link: you can customize the Installation.
-  inst_option_2_2: We love automatize stuff,
-  inst_option_2_2_link: just follow this guide
-  installation_title: Installation
-  how_title: How to Use Encuestame
-  how_subtitle: Here some shortcuts to give you a brief introduction how to use Encuestame
-  how_option1: Linking Social Networks
-  how_option2: Create your first Tweetpoll
-  how_option3: Create your first Poll
-  how_option4: Embebed a Widget
-  getin_title: Get in Touch
-  getin_subtitle:  We are waiting for your feedback, comments, questions or suggestions, there are  different ways to reach us, don't be shy !
-  getin_op1_word1: Read our
+  installation_subtitle: Solo un par de pasos
+  ins_option_1_title: Paso 1. Contenedor web
+  ins_option_2_title: Paso 2. Asistente de instalacion
+  ins_option_1_desc: La instalación es muy sencilla, solo siga los siguientes pasos
+  inst_option_1_1: Si tu eres un ninja del java, tambien puedes desplegar desde el codigo fuente
+  inst_option_1_1_link: siga las instrucciones.
+  inst_option_1_2: o descarga el ultimo release
+  inst_option_1_2_link: desde nuestro espejo.
+  inst_option_2_1:  Una vez tu tengas el archivo archivo de configuración,
+  inst_option_2_1_link: podrás configurar tu instalacción.
+  inst_option_2_2: Nos gusta automatizar cosas,
+  inst_option_2_2_link: y por eso te ofrecemos esta asistente de instalacción.
+  installation_title: Instalación
+  how_title: Como usar Encuestame
+  how_subtitle:  Aquí unos accesos directos que te daran una pequeña introducción de como usar Encuestame
+  how_option1: Conectando redes sociales
+  how_option2: Crea tu primer tweetpoll
+  how_option3: Crea tu primer sondeo
+  how_option4: Compartir encuestas como widgets
+  getin_title: Contactanos
+  getin_subtitle: Estamos esperando tu opinión, comentarios, preguntas o sugerencias, existen diferentes formas de contactarnos, no tengas temor !
+  getin_op1_word1: Lee nuestro
   getin_op1_word2: Blog
-  getin_op2_word1: For help using Encuestame, ask on our
-  getin_op2_word2: Google Group
-  getin_op2_word3: o our
-  getin_op2_word4: Developer mail list.
-  getin_op3_word1: See our videos in our
-  getin_op3_word2: Youtube Channel
-  getin_op4_word1: Also is posible post a comment in our
+  getin_op2_word1: Para ayuda usando Encuestame, pregunta en nuestro
+  getin_op2_word2: Grupo de Google
+  getin_op2_word3: o nuestra
+  getin_op2_word4: lista de desarrolladores.
+  getin_op3_word1: Mira nuestros videos en
+  getin_op3_word2: el canal de Youtube
+  getin_op4_word1: También puedes postear un comentario en nuestro
   getin_op4_word2: Wiki
 ab:
-  main_title: About
-  subtitle: All you want to know about the project
-  history_title: History
-  history_1: Encuestame has been developed by
-  history_2: From de beginning it was a personal project based in old PHP project and after some redesign it was converted in Java project. After try different technologies we bet for Dojo Toolkit and Spring Framework as main framework to build the project.
-  history_3: Along the last years we have been adding new features, being able to connect Encuestame with the most famous  Social Networks, trying to give you a project easy to be installed, to be usable and to be easy manageable. In mid-2011 we  release the first version of Encuestame, since then we managed to make usable Encuestame in the new mobile world.
-  history_4:  Also we've enjoyed the support of companies like Atlassian and Jetbrains that have offered pen source licenses to our team. The history doesn't finish here, it will have more features coming soon.
-  team: Team
-  tm_lead: Encuestame is maintained by one of its creators and a couple of contributors.
-  tm_involved_1: Get involved with Encuestame development by
-  tm_involved_2: opening an issue
-  tm_involved_3: or submitting a pull request. Read our
-  tm_involved_4: contributing guidelines
-  tm_involved_5:  for information on how we develop.
+  main_title: Sobre nosotros
+  subtitle: Todo lo que tu quieres saber sobre nuestro proyecto
+  history_title: Historia
+  history_1: Encuestame ha sido desarrollado por
+  history_2: Desde el principio siempre fue un proyecto personal basado en un anterior proyecto en PHP, despues de un rediseño se convirtió en un proyecto en Java. Hemos apostado por Dojo Toolkit y Spring para construir este proyecto.
+  history_3: A lo largo de los años hemos ido agregando nuevas caracteristicas, siendo capaz de conectar Encuestame con las mas famosas redes sociales, tratando de ofrecer un proyecto facilmente instalable, usable y de facil administración. A mediados del 2011 liberamos nuestra primera version, desde entonces hemos intentado acercar Encuestame al mundo movil.
+  history_4: También hemos disfrutado del apoyo de compañias como Atlassian y Jetbrains que nos han ofrecido licencias open source a nuestro equpipo. La historia no finaliza aqui, estamos trabajando en mejorar le proyecto y traer nuevas funcionalidades.
+  team: El Equipo
+  tm_lead: Encuestame es mantenido por los siguientes desarrolladors y unos cuantos contribuyentes.
+  tm_involved_1: Involucrate en el desarrollo de Encuestame
+  tm_involved_2: reportando un problema
+  tm_involved_3: o enviando un parche o código nuevo. Lea nuestra
+  tm_involved_4: guia para nuevos contribuyentes
+  tm_involved_5:  para informarte como nosotros trabajamos.
 fe:
-  slide_1:  Control Manage System
-  slide_d_1: Organize, search, filter and edit Surveys
-  slide_2: Scheduled Events
-  slide_d_2:  Twitter is down? No problem, program your survey to be sended later.
-  slide_3:  Embebed Survey
-  slide_d_3:  Is possible embebed content in blogs or websites.
-  slide_4:  Content Filtering
-  slide_d_4: The best way to search the required content
-  slide_5: Notification Center
-  slide_d_5: Have you missed  some event? No problem.
-  slide_6: Social Network Connect
-  slide_d_6:  We support the most famous social network, log in, publish and share content is possible.
-  slide_7:  Survey Viewer
-  slide_d_7: Share easily your records with your public
+  slide_1:  Administración de Encuestas
+  slide_d_1: Organiza, busca, filtra y edita encuestas
+  slide_2: Programa encuestas
+  slide_d_2:  Twitter esta caido? No hay problema, programa tu encuesta y sera enviada despues.
+  slide_3:  Comparte tus Encuestas
+  slide_d_3:  Es posible embeber encuestas y resultados en tu blog
+  slide_4:  Filtrado de contenido
+  slide_d_4: La mejor forma de buscar tu contenido
+  slide_5: Centro de notificaciones
+  slide_d_5: Te has perdido algun evento? No hay problema.
+  slide_6: Conectores con Redes Sociales
+  slide_d_6:  Soportamos las redes sociales mas populares, logeate, publica y comparte tus encuestas.
+  slide_7:  Resultados de Encuestas
+  slide_d_7: Comparte facilmente los resultados de tus encuestas

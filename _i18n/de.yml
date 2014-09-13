@@ -22,9 +22,9 @@ pages:
  feedback: Feedback
  steps_title_2: Create a Survey
  steps_title_3: Publish && Share
- steps_title_desc_1: The most popular Social Networks are available in Encuestame,connect it all accounts you want to publish, without restrictions
+ steps_title_desc_1: The most popular Social Networks are available in Encuestame.
  steps_title_desc_2: Several type of survey are available in Encuestame,
- steps_title_desc_3: 
+ steps_title_desc_3: Test Text
  open_source_title: Encuestame is open source. It's hosted, developed, and maintained on GitHub.
  open_source_title_btn: View the GitHub project
  footer_text_step_1: Code licensed under the
@@ -39,13 +39,23 @@ pages:
  menu_github: GitHub project
  menu_about: About
  getting_started_subtitle: Here the first steps with Encuestame
-
  menu_features: Features
  menu_features_subtitle: Enjoy a collection screenshot of all features
  menu_mobile: Encuestame Mobile
  menu_mobile_subtitle: mobile feature
  aside_title_1:  Compiled version, ready to deploy in your web container.
  aside_title_2:  If you haven't already, download the source code for
+
+mo:
+  content_title: Mobile Accessibility
+  content_descri: Navigate in your mobile devices is very straightforward
+  option_feature: Features
+  option_1: Mobile Votes
+  option_2: Results Navigation
+  option_3: Comments
+  option_4: Interactive Charts
+  option_5: Profile Resume
+  option_6: Future Android and iOS Support
 
 gtt:
   installation_title: Installation

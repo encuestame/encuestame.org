@@ -23,7 +23,7 @@ exclude:
   - Gemfile
 
 # Custom vars
-current_version:  1.1.47
+current_version:  1.5.0
 repo:             https://github.com/encuestame
 project_name:     Encuestame
 download:
@@ -40,7 +40,7 @@ commit:           http://encuestame.org/wiki/display/DEVELOPMENT/Commiters+Guide
 maillist:         http://lists.encuestame.org/cgi-bin/mailman/listinfo
 google_groups:    https://groups.google.com/forum/?hl=es#!forum/encuestame
 build:             http://www.encuestame.org/build
-releases:         http://www.encuestame.org/issues/browse/ENCUESTAME#selectedTab=com.atlassian.jira.plugin.system.project%3Aversions-panel
+releases:         http://www.encuestame.org/issues/browse/ENCUESTAME/?selectedTab=com.atlassian.jira.jira-projects-plugin:versions-panel
 jota_twitter:      http://www.twitter.com/jotadeveloper
 dianmora_twitter:      http://www.twitter.com/dianmora
 youtube_channel:   http://www.youtube.com/channel/UCXCTTWRQXfArc_8J7O2P6Yg

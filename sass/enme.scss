@@ -40,8 +40,8 @@ iframe {
 
 
 .site-wrapper {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 85px;
+  padding-bottom: 85px;
   text-align: center;
   .docs-subtitle {
       margin-bottom: 30px;
@@ -133,6 +133,10 @@ iframe {
 .list-group {
   padding-left: 0;
   margin-bottom: 20px
+}
+
+.enme-separator {
+  border-color: #D69A01;
 }
 
 .list-group-item:first-child {
