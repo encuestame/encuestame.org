@@ -23,26 +23,27 @@ exclude:
   - Gemfile
 
 # Custom vars
-current_version:  1.147
-in_progress    :  1.5.0
+current_version:  1.5.0
+in_progress    :  1.5.1
 repo:             https://github.com/encuestame
 project_name:     Encuestame
 download:
-  source:         https://github.com/encuestame/encuestame/archive/1.147v091214.zip
+  source:         https://github.com/encuestame/encuestame/archive/1.5.zip
   dist:           https://sourceforge.net/projects/encuestame/files/latest/download
 
 site_domain_url:      http://www.encuestame.org
-blog:             http://www.encuestame.org/blog
+blog:             http://encuestame.org/wiki/pages/viewrecentblogposts.action?key=~juanpicado
 wiki:             http://www.encuestame.org/wiki
 feedback:         https://encuestame.uservoice.com
+demo:             http://www.encuestame.org/demo
 issues:           http://www.encuestame.org/issues
-code:             http://www.encuestame.org/code
+code:             https://github.com/encuestame/encuestame/
 commit:           http://encuestame.org/wiki/display/DEVELOPMENT/Commiters+Guidelines
-maillist:         http://lists.encuestame.org/cgi-bin/mailman/listinfo
+maillist:         https://groups.google.com/forum/?hl=es#!forum/encuestame
 google_groups:    https://groups.google.com/forum/?hl=es#!forum/encuestame
-build:             http://www.encuestame.org/build
+build:            http://www.encuestame.org/build
 releases:         http://www.encuestame.org/issues/browse/ENCUESTAME/?selectedTab=com.atlassian.jira.jira-projects-plugin:versions-panel
-jota_twitter:      http://www.twitter.com/jotadeveloper
+jota_twitter:     http://www.twitter.com/jotadeveloper
 dianmora_twitter:      http://www.twitter.com/dianmora
 youtube_channel:   http://www.youtube.com/channel/UCXCTTWRQXfArc_8J7O2P6Yg
 license_url:       https://raw.github.com/encuestame/encuestame/master/LICENSE.txt
@@ -50,8 +51,8 @@ license_site:     https://creativecommons.org/licenses/by/3.0/
 
 getting:
    web1: http://encuestame.org/wiki/display/DOC/How+to+build+Encuestame
-   web2: http://encuestame.org/wiki/display/DOC/Download+Encuestame
-   wizard1: http://encuestame.org/wiki/display/DOC/How+to+build+Encuestame
+   web2: http://encuestame.org/wiki/display/DOC/Download
+   wizard1: http://encuestame.org/wiki/display/DOC/Encuestame+Installation+Guide
    wizard2: http://encuestame.org/wiki/display/DOC/Wizard+Installation
    how1: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation
    how2: http://encuestame.org/wiki/display/DOC/Encuestame+Documentation

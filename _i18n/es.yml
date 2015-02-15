@@ -15,6 +15,7 @@ global:
   releases: Versiones
   source_code: Código Fuente
   follow: Seguir
+  demo: Demo
   tweet: Tweet
   tweet_message: Encuestame &#8211; Build Survey, Recolect Data. (EN)
 pages:
@@ -47,6 +48,7 @@ pages:
   menu_mobile_subtitle: Disfruta de la version web movil 
   aside_title_1:  Versión lista para su uso en su contenedor web.
   aside_title_2: Descarga el código fuente de
+  aside_title_3: Quieres probar el producto? Visita el demo
 
 mo:
   content_title: Accesibilidad Movil
@@ -98,7 +100,7 @@ ab:
   subtitle: Todo lo que tu quieres saber sobre nuestro proyecto
   history_title: Historia
   history_1: Encuestame ha sido desarrollado por
-  history_2: Desde el principio siempre fue un proyecto personal basado en un anterior proyecto en PHP, despues de un rediseño se convirtió en un proyecto en Java. Hemos apostado por Dojo Toolkit y Spring para construir este proyecto.
+  history_2: y fue creado para llenar un espacio en el mundo de las encuesatas en linea, solo hay unas pocas opciones listas para usar y las demas son bastante caras
   history_3: A lo largo de los años hemos ido agregando nuevas caracteristicas, siendo capaz de conectar Encuestame con las mas famosas redes sociales, tratando de ofrecer un proyecto facilmente instalable, usable y de facil administración. A mediados del 2011 liberamos nuestra primera version, desde entonces hemos intentado acercar Encuestame al mundo movil.
   history_4: También hemos disfrutado del apoyo de compañias como Atlassian y Jetbrains que nos han ofrecido licencias open source a nuestro equpipo. La historia no finaliza aqui, estamos trabajando en mejorar le proyecto y traer nuevas funcionalidades.
   team: El Equipo

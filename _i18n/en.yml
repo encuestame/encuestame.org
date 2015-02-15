@@ -16,6 +16,7 @@ global:
   follow: Follow
   tweet: Tweet
   source_code: Source Code
+  demo: Demo
   tweet_message: Encuestame &#8211; Build Survey, Recolect Data. (EN)
 pages:
  title: Build and Manage your social network surveys in a single place.
@@ -46,7 +47,8 @@ pages:
  menu_mobile: Mobile
  menu_mobile_subtitle: mobile feature
  aside_title_1:  Compiled version, ready to deploy in your web container.
- aside_title_2:  If you haven't already, download the source code for
+ aside_title_2:  If you haven't already, download the source code forsource_code
+ aside_title_3:  Do you want to try the product? Visit the demo
 
 mo:
   content_title: Mobile Accessibility
@@ -61,14 +63,14 @@ mo:
 
 gtt:
   installation_title: Installation
-  installation_subtitle: Subtitle Installation
+  installation_subtitle: A very straightforward installation just following some steps
   ins_option_1_title: Step 1. Web Container
   ins_option_2_title: Step 2. Wizard Installation
   ins_option_1_desc: The installation is quite straightforward, just follow the next steps
-  inst_option_1_1: If you are a Java ninja you can build your own deploy from the source code,
+  inst_option_1_1: As a developer you can build the project from the source code,
   inst_option_1_1_link: follow  this guidelines.
   inst_option_1_2: or download the last release
-  inst_option_1_2_link: from our Mirrow.
+  inst_option_1_2_link: from here.
   inst_option_2_1:  Once you have the build file,
   inst_option_2_1_link: you can customize the Installation.
   inst_option_2_2: We love automatize stuff,
@@ -97,7 +99,7 @@ ab:
   subtitle: All you want to know about the project
   history_title: History
   history_1: Encuestame has been developed by
-  history_2: From de beginning it was a personal project based in old PHP project and after some redesign it was converted in Java project. After try different technologies we bet for Dojo Toolkit and Spring Framework as main framework to build the project.
+  history_2: and was created to fill empty space in the survey online world, there are only a few options ready to use and others only under expensive rates, is the time for an open source option
   history_3: Along the last years we have been adding new features, being able to connect Encuestame with the most famous  Social Networks, trying to give you a project easy to be installed, to be usable and to be easy manageable. In mid-2011 we  release the first version of Encuestame, since then we managed to make usable Encuestame in the new mobile world.
   history_4:  Also we've enjoyed the support of companies like Atlassian and Jetbrains that have offered pen source licenses to our team. The history doesn't finish here, it will have more features coming soon.
   team: Team
