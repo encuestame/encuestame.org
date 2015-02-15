@@ -1,6 +1,6 @@
 name: Encuestame Social Networl Survey Tool
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 languages: ["en", "en", "es", "de"]
 
