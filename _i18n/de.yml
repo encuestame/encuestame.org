@@ -18,7 +18,6 @@ global:
   demo:  Demo
   tweet: Tweet
   tweet_message: "Encuestame - Build Survey, Sammeln Daten. (EN)"
-
 pages:
   title: Erstellen und verwalten Sie Ihre Social-Networking-Umfragen an einem Ort.
   title_steps:  Encuestame im 3 Schritte
@@ -32,10 +31,9 @@ pages:
   open_source_title: "Encuestame ist ein Open-Source Projekt, das auf Github entwickelt, gehalten sowie gehostet wird."
   open_source_title_btn: Besuchen Sie das Projekt auf Github
   footer_text_step_1:  Quellcode  unter lizenz
-  footer_text_step_2:  
+  footer_text_step_2:  EMPTY
   footer_text_step_3:  Encuestame wurde erstellt von
   head_description:  "Encuestame ist ein Open Source CMS, um verschiedene Art der Befragungen zu machen.Encuestame ist basierend auf massiven Verteilung in sozialen Netzwerken, E-Mail, Web und mobile Versionen, Geolocation-Funktionen, Syndizierung, Grafiken, schöne E-Mail-Vorlagen sowie eine moderne Benutzeroberfläche."
-interface:
   keywords:  Umfrage und Sozial Netzwerke
   menu_getting_started:  Erste Schritte
   menu_features: Features
@@ -56,26 +54,26 @@ mo:
   content_descri: Surfen Sie im Encuestame durch ein mobiles Gerät. Es ist einfach
   option_feature:  Features
   option_1: Mit  Handy abstimmen.
-  option_2:  
+  option_2:  EMPTY
   option_3:  Kommentieren
   option_4:  Interaktive Grafik
   option_5:  Benutzerprofile
   option_6:  Zur Verfügung versionen von Android oder iOs in der Zukunft
 gtt: 
-  installation_title :
+  installation_title : Installation
   installation_subtitle: Nur ein paar Schritt
-  ins_option_1_title: "Schritte 1: Web Container"
-  ins_option_2_title: "Schritte 2: Installations-Assistenten"
+  ins_option_1_title: Schritte 1 Web Container
+  ins_option_2_title: Schritte 2 Installations-Assistenten
   ins_option_1_desc: Installation ist sehr einfach folgen Sie einfach den unten stehenden Schritten
   inst_option_1_1: "Wenn Sie ein Ninja java sind, können Sie auch aus dem Quellcode bereitstellen"
   inst_option_1_1_link: folgen Sie den Anweisungen
   inst_option_1_2: oder Laden Sie die letzte Release herunter
-  inst_option_1_2_link:  
+  inst_option_1_2_link: EMPTY
   inst_option_2_1: Sobald Sie die Konfigurationsdatei haben
   inst_option_2_1_link: können Sie  Ihre instalaccion konfigurieren.
   inst_option_2_2: Zu Prozesse automatisieren.
-  inst_option_2_2_link:  
-  installation_title: Installation
+  inst_option_2_2_link: EMPTY
+  installation_title: EMPTY
   how_title: Wie nutzen Encuestame richtig
   how_subtitle: "Hier ein paar Shortcuts,wo Sie  eine kurze Einführung finden können, um Encuestame zu verwenden"
   how_option1: Verbindung mit Sozialen Netzwerke
