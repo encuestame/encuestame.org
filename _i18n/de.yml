@@ -31,7 +31,7 @@ pages:
   open_source_title: "Encuestame ist ein Open-Source Projekt, das auf Github entwickelt, gehalten sowie gehostet wird."
   open_source_title_btn: Besuchen Sie das Projekt auf Github
   footer_text_step_1:  Quellcode  unter lizenz
-  footer_text_step_2:  EMPTY
+  footer_text_step_2:  und diese Website ist lizenziert
   footer_text_step_3:  Encuestame wurde erstellt von
   head_description:  "Encuestame ist ein Open Source CMS, um verschiedene Art der Befragungen zu machen.Encuestame ist basierend auf massiven Verteilung in sozialen Netzwerken, E-Mail, Web und mobile Versionen, Geolocation-Funktionen, Syndizierung, Grafiken, schöne E-Mail-Vorlagen sowie eine moderne Benutzeroberfläche."
   keywords:  Umfrage und Sozial Netzwerke
@@ -54,7 +54,7 @@ mo:
   content_descri: Surfen Sie im Encuestame durch ein mobiles Gerät. Es ist einfach
   option_feature:  Features
   option_1: Mit  Handy abstimmen.
-  option_2:  EMPTY
+  option_2:  Überprüfen die ergebnisse
   option_3:  Kommentieren
   option_4:  Interaktive Grafik
   option_5:  Benutzerprofile
@@ -68,12 +68,12 @@ gtt:
   inst_option_1_1: "Wenn Sie ein Ninja java sind, können Sie auch aus dem Quellcode bereitstellen"
   inst_option_1_1_link: folgen Sie den Anweisungen
   inst_option_1_2: oder Laden Sie die letzte Release herunter
-  inst_option_1_2_link: EMPTY
+  inst_option_1_2_link: auf unseren Mirrors
   inst_option_2_1: Sobald Sie die Konfigurationsdatei haben
   inst_option_2_1_link: können Sie  Ihre instalaccion konfigurieren.
   inst_option_2_2: Zu Prozesse automatisieren.
-  inst_option_2_2_link: EMPTY
-  installation_title: EMPTY
+  inst_option_2_2_link: deshalb bieten wir diese installation Assistant.
+   
   how_title: Wie nutzen Encuestame richtig
   how_subtitle: "Hier ein paar Shortcuts,wo Sie  eine kurze Einführung finden können, um Encuestame zu verwenden"
   how_option1: Verbindung mit Sozialen Netzwerke
