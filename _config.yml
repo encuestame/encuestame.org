@@ -23,8 +23,8 @@ exclude:
   - Gemfile
 
 # Custom vars
-current_version:  1.5.0
-in_progress    :  1.5.1
+current_version:  1.147
+in_progress    :  1.5.0
 repo:             https://github.com/encuestame
 project_name:     Encuestame
 download:
