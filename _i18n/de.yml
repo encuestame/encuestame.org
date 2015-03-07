@@ -17,24 +17,24 @@ global:
   follow:  Folge Encuestame auf Twitter
   demo:  Demo
   tweet: Tweet
-  tweet_message: "Encuestame - Build Survey, Sammeln Daten. (EN)"
+  tweet_message: "Encuestame - Build Survey, sammeln Sie Daten. (EN)"
 pages:
   title: Erstellen und verwalten Sie Ihre Social-Networking-Umfragen an einem Ort.
-  title_steps:  Encuestame im 3 Schritte
+  title_steps:  Encuestame in drei Schritten
   steps_title_1: Sozial Netzwerke
   feedback:  Vorschläge
   steps_title_2: Umfrage erstellen
-  steps_title_3: Veröffentlichen und Teilen
+  steps_title_3: Veröffentlichen und teilen
   steps_title_desc_1:  Verbinden Sie an die beliebtesten Social Network
-  steps_title_desc_2:  Einfache Erstellung von verschiedenen UmfragenTypen
+  steps_title_desc_2:  Einfache Erstellung von verschiedenen Umfragentypen
   steps_title_desc_3:  Teilen Sie Ihre Umfrage in mehreren sozialen Netzwerken
-  open_source_title: "Encuestame ist ein Open-Source Projekt, das auf Github entwickelt, gehalten sowie gehostet wird."
+  open_source_title: "Encuestame ist ein Open-Source-Projekt, das auf Github entwickelt, gehalten sowie gehostet wird."
   open_source_title_btn: Besuchen Sie das Projekt auf Github
   footer_text_step_1:  Quellcode  unter lizenz
-  footer_text_step_2:  EMPTY
+  footer_text_step_2:  und diese Website ist lizenziert
   footer_text_step_3:  Encuestame wurde erstellt von
-  head_description:  "Encuestame ist ein Open Source CMS, um verschiedene Art der Befragungen zu machen.Encuestame ist basierend auf massiven Verteilung in sozialen Netzwerken, E-Mail, Web und mobile Versionen, Geolocation-Funktionen, Syndizierung, Grafiken, schöne E-Mail-Vorlagen sowie eine moderne Benutzeroberfläche."
-  keywords:  Umfrage und Sozial Netzwerke
+  head_description:  "Encuestame ist ein Open Source CMS, um verschiedene Arten der Befragung zu machen. Encuestame basiert auf der massiven Verteilung in sozialen Netzwerken, E-Mail, Web und durch mobile Versionen, Geolocation-Funktionen, Syndizierung, Grafiken, schöne E-Mail-Vorlagen sowie eine moderne Benutzeroberfläche."
+  keywords:  Umfrage und Soziale Netzwerke
   menu_getting_started:  Erste Schritte
   menu_features: Features
   menu_mobile: Mobil
@@ -43,82 +43,82 @@ pages:
   menu_about:  Über uns
   getting_started_subtitle:  Erste Schritte bei Encuestame
   menu_features: Features
-  menu_features_subtitle:  Genießen Sie eine Bildersammlung von allen unseren Features
+  menu_features_subtitle:  Genießen Sie eine Bildersammlung von allen unserer Features
   menu_mobile: Mobil
-  menu_mobile_subtitle:  Genießen Sie unsere Mobil version
-  aside_title_1: Fertig version für die Verwendung auf Ihrem Web-Container.
+  menu_mobile_subtitle:  Genießen Sie unsere mobile Version
+  aside_title_1: Fertige Version für die Verwendung auf Ihrem Web-Container.
   aside_title_2: Laden Sie den Quellcode herunter
-  aside_title_3: Möchten Sie das Produkt ausprobieren? Besuchen Sie die Demo.
+  aside_title_3: Möchten Sie das Produkt ausprobieren? Besuchen Sie die Demoversion.
 mo:  
   content_title: mobile Accessibility
   content_descri: Surfen Sie im Encuestame durch ein mobiles Gerät. Es ist einfach
   option_feature:  Features
   option_1: Mit  Handy abstimmen.
-  option_2:  EMPTY
+  option_2:  Überprüfen die Ergebnisse
   option_3:  Kommentieren
   option_4:  Interaktive Grafik
   option_5:  Benutzerprofile
-  option_6:  Zur Verfügung versionen von Android oder iOs in der Zukunft
+  option_6: In der Zukunft stehen Versionen fü Android oder iOS zu Verfügung
 gtt: 
   installation_title : Installation
-  installation_subtitle: Nur ein paar Schritt
-  ins_option_1_title: Schritte 1 Web Container
-  ins_option_2_title: Schritte 2 Installations-Assistenten
-  ins_option_1_desc: Installation ist sehr einfach folgen Sie einfach den unten stehenden Schritten
-  inst_option_1_1: "Wenn Sie ein Ninja java sind, können Sie auch aus dem Quellcode bereitstellen"
-  inst_option_1_1_link: folgen Sie den Anweisungen
+  installation_subtitle: Nur ein paar Schritte
+  ins_option_1_title: Schritt 1 Web Container
+  ins_option_2_title: Schritt 2 Installations-Assistenten
+  ins_option_1_desc: Die Installation ist sehr einfach folgen Sie einfach den unten stehenden Schritten
+  inst_option_1_1: "Wenn Sie ein Java-Ninja sind, können Sie auch aus dem Quellcode bereitstellen"
+  inst_option_1_1_link: Folgen Sie den Anweisungen
   inst_option_1_2: oder Laden Sie die letzte Release herunter
-  inst_option_1_2_link: EMPTY
+  inst_option_1_2_link: auf unseren Mirrors
   inst_option_2_1: Sobald Sie die Konfigurationsdatei haben
-  inst_option_2_1_link: können Sie  Ihre instalaccion konfigurieren.
+  inst_option_2_1_link: können Sie  Ihre Installation konfigurieren.
   inst_option_2_2: Zu Prozesse automatisieren.
-  inst_option_2_2_link: EMPTY
-  installation_title: EMPTY
-  how_title: Wie nutzen Encuestame richtig
+  inst_option_2_2_link: deshalb bieten wir diesen Installationsassistenten.
+   
+  how_title: Wie nutzt man Encuestame richtig?
   how_subtitle: "Hier ein paar Shortcuts,wo Sie  eine kurze Einführung finden können, um Encuestame zu verwenden"
-  how_option1: Verbindung mit Sozialen Netzwerke
+  how_option1: Verbindung mit sozialen Netzwerken
   how_option2: Erstellen Sie Ihren ersten tweetpoll
   how_option3: Erstellen Sie Ihren ersten Poll
-  how_option4: Teilen Umfragen als Widgets
-  getin_title: Kontakt uns
-  getin_subtitle: "Wir warte auf Ihre Meinung  Kommentare, Fragen oder Vorschläge. Es gibt verschiedene Möglichkeiten, uns zu kontaktieren, fürchtet euch nicht!"
-  getin_op1_word1: Lesen Sie unsere
+  how_option4: Teilen sie die Umfragen als Widgets
+  getin_title: Kontaktieren Sie uns
+  getin_subtitle: "Wir warten auf Ihre Meinung, Kommentare, Fragen oder Vorschläge. Es gibt verschiedene Möglichkeiten, uns zu kontaktieren, zögert nicht!"
+  getin_op1_word1: Lesen Sie unseren
   getin_op1_word2: Blog
-  getin_op2_word1: Brauchen Sie hilfe? Besuche den Hilfebereich oder fragen Sie unsere
+  getin_op2_word1: Brauchen Sie Hilfe? Besuchen Sie den Hilfebereich oder fragen Sie unsere
   getin_op2_word2: Google-Gruppe
   getin_op2_word3: oder unsere
-  getin_op2_word4: Entickler liste
+  getin_op2_word4: Enticklerliste
   getin_op3_word1: Sehen Sie sich unsere Videos auf
-  getin_op3_word2: unserem YouTube-Kana
-  getin_op4_word1: auch Sie können einen Kommentar auf unserer posten
-  getin_op4_word2: Wiki
+  getin_op3_word2: unserem YouTube-Kanal an
+  getin_op4_word1: Sie können auch einen Kommentar auf unserer
+  getin_op4_word2: Wiki posten
 ab: 
   main_title: Über uns
-  subtitle: "Alles, was Sie über unser Projekt erfahren wollen"
+  subtitle: "Alles, was Sie über unser Projekt wissen wollen"
   history_title: Geschichte
   history_1: Encuestame wird entwickelt
-  history_2: "und wurde geschaffen, um einen Platz in der Welt der Online-encuesatas füllen, denn  es gibt nur wenige Optionen einsatzbereit und die sind anderen sehr teuer"
-  history_3: "Im Laufe der Jahre haben wir  neuen Features hinzugefügt als die Encuestame Verbindung mit den bekanntesten sozialen Netzwerken, um eine installierbare, tragbare projekt anbieten und eine einfach Projektmanagement. Mitte 2011 veröffentlichten wir unsere erste Version.Mitte 2011 veröffentlichten wir unsere erste Version. Seitdem haben wir versucht, Encuestame die mobile Welt zu bringen."
-  history_4: "Wir haben auch die Unterstützung von Unternehmen wie Atlassian und JetBrains durch Open-Source Lizenz seiner Produkte. Die Geschichte endet nicht hier, wir sind auf die Verbesserung der Projekt und bringen  neue Funktionalitäten."
+  history_2: "und wurde geschaffen, um einen Platz in der Welt der Onlineumfragen zu füllen, denn  es gibt nur wenige Möglichkeiten und diese sind sehr teuer"
+  history_3: "Im Laufe der Jahre haben wir neue Features hinzugefügt als die Encuestame Verbindung mit den bekanntesten sozialen Netzwerken, um eine installierbare, tragbare projekt anbieten und eine einfach Projektmanagement. Mitte 2011 veröffentlichten wir unsere erste Version. Mitte 2011 veröffentlichten wir unsere erste Version. Seitdem haben wir versucht, Encuestame in die mobile Welt zu bringen."
+  history_4: "Wir haben auch die Unterstützung von Unternehmen wie Atlassian und JetBrains durch Open-Source-Lizenzen ihrer Produkte. Die Geschichte hier jedoch nicht, wir sind dabei, das Projekt zu verbessern und neue Funktionen zu entwickeln."
   team: Das Team
-  tm_lead: Encuestame wird durch die folgenden Entwickler und ein paar Mitarbeiter beibehalten
+  tm_lead: Encuestame wird durch die folgenden Entwickler und ein paar Mitarbeiter geführt
   tm_involved_1: Bei der Entwicklung von Encuestame beteiligten
   tm_involved_2: ein Problem melden
-  tm_involved_3: Senden Sie uns ein Patch oder neuen Code. Lesen Sie unsere
-  tm_involved_4: Führung für neue Mitarbeiter
-  tm_involved_5: "zu informieren,  wie wir arbeiten."
+  tm_involved_3: Senden Sie uns ein Patch oder neuen Code. Lesen Sie unseren
+  tm_involved_4: Leitfaden für neue Mitarbeiter
+  tm_involved_5: "um sich zu informieren,  wie wir arbeiten."
 fe:
   slide_1: Verwaltung Umfragen
-  slide_d_1: "Organisieren, Filter, Suchanfrage und Bearbeiten die Umfragen"
+  slide_d_1: "Organisieren, Filter, Suchanfrage und bearbeiten der Umfragen"
   slide_2: Planned Umfrage
-  slide_d_2: "Twitter ist down? Kein Problem, Ihre Umfrage,Programm und später gesendet werden."
+  slide_d_2: "Twitter ist down? Kein Problem, Ihre Umfrage,Programm und wird später gesendet."
   slide_3: Teilen Sie Ihre Umfrage
-  slide_d_3: Sie können Umfragen und Ergebnisse auf Ihrem Blog einbetten
-  slide_4: Inhaltsfilterung
+  slide_d_3: Sie können Umfragen und Ergebnisse in Ihren Blog einbetten
+  slide_4: Filterung der Inhalte
   slide_d_4: "Der beste Weg, um Ihre Inhalte zu finden"
   slide_5: Benachrichtigung
   slide_d_5: Haben Sie eine Veranstaltung verpasst? Kein Problem
   slide_6: Verbinden mit Social Media
   slide_d_6: "Unterstützung die beliebtesten Social Networks. Anmelden, Veröffentlichen und teilen Sie Ihre Umfragen"
   slide_7: Umfrageergebnisse
-  slide_d_7: leicht Teilen die Ergebnisse Ihrer Umfragen
+  slide_d_7: Teilen Sie einfach die Ergebnisse Ihrer Umfragen
