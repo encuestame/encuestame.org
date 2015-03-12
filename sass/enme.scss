@@ -116,6 +116,7 @@ iframe {
     @include tablet-only {
       .docs-subtitle {
         font-size: 30px;
+
         line-height: 40px;
       }
     }
@@ -126,10 +127,12 @@ iframe {
       margin: 0px;
       width: 100%;
       padding: 15px 10px;
+      .white {
+        color: #FFF;
+      }
       text-align: center;
       > h1 {
         font-size: 25px;
-        color: #FFF;
         margin: 0 0 35px  0;
       }
       h2 {
