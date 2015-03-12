@@ -10,7 +10,7 @@ javascripts_dir = "js"
 # You can select your preferred output style here (can be overridden via the command line):
 # NOTE: using :compressed will strip out the @polyfill comments and make
 #       polyfilled styling rules not work correctly.
-output_style = :expanded #:expanded or :nested or :compact or :compressed
+output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
