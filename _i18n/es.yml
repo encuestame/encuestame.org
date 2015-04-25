@@ -20,6 +20,7 @@ global:
   tweet_message: Encuestame &#8211; Build Survey, Recolect Data. (EN)
 pages:
   title: Construye y Administra tus encuestas de redes sociales en un solo lugar.
+  new_installer: Nuevo instalador de escritorio disponible
   title_steps: Encuestame en 3 pasos
   steps_title_1: Conectores Sociales
   feedback: Sugerencias

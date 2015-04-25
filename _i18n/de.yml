@@ -21,6 +21,7 @@ global:
 pages:
   title: Erstellen und verwalten Sie Ihre Social-Networking-Umfragen an einem Ort.
   title_steps:  Encuestame in drei Schritten
+  new_installer: Neue Desktop installer verfügbar
   steps_title_1: Sozial Netzwerke
   feedback:  Vorschläge
   steps_title_2: Umfrage erstellen

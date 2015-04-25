@@ -20,6 +20,7 @@ global:
   tweet_message: Encuestame &#8211; Build Survey, Recolect Data. (EN)
 pages:
  title: Build and Manage your social network surveys in a single place.
+ new_installer: New desktop installer available
  title_steps: Encuestame in 3 steps
  steps_title_1: Social Connectors
  feedback: Feedback
