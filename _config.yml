@@ -23,12 +23,12 @@ exclude:
   - Gemfile
 
 # Custom vars
-current_version:  1.5.4
+current_version:  1.5.6
 in_progress    :  1.6.0-alpha
 repo:             https://github.com/encuestame
 project_name:     Encuestame
 download:
-  source:         https://sourceforge.net/projects/encuestame/files/1.5.4/
+  source:         https://sourceforge.net/projects/encuestame/files/1.5.6/
   dist:           https://sourceforge.net/projects/encuestame/files/latest/download
 
 site_domain_url:      http://www.encuestame.org
